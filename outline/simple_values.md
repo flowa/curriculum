@@ -13,21 +13,21 @@ http://clojurebridge.github.io/curriculum/outline/simple_values.html
 {% endcomment %}
 
 <section>
-Simple Values
+Muuttujat
 ----------------------------------------
 {: .slide-title .chapter}
 
-* Strings
-* Booleans and nil
-* Keywords
-* Numbers
-  - Arithmetic
+* Tekstijonot
+* Totuusarvot ja nil
+* Avainsanat
+* Numerot
+  - Aritmetiikka
 
-* Assignment: `def`
+* Alustus: `def`
 </section>
 
 <section>
-## Simple values
+## Muuttujat
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
 
@@ -38,7 +38,7 @@ Simple Values
 </section>
 
 <section ng-controller="NarrativeController">
-### Strings
+### Tekstijonot
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
@@ -60,7 +60,7 @@ Simple Values
 </section>
 
 <section ng-controller="NarrativeController">
-### Booleans and nil
+### Totuusarvot ja nil
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
@@ -89,7 +89,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-### Keywords
+### Avainsanat
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
@@ -111,9 +111,9 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-### Numbers
+### Numerot
 
-#### Integers <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
+#### Kokonaisluvut <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
 > Clojure has several different types of numbers.
 {: ng-show="block81" .description}
@@ -131,7 +131,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-#### Decimal numbers <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
+#### Desimaaliluvut <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
 
 > Then we have decimal numbers, which are also called floats. They
 > include any numbers that have a decimal point in them.
@@ -145,7 +145,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-#### Ratios <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+#### Suhde <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 > Finally, we have fractions, which are also called ratios. Computers
 > cannot perfectly represent all floats, but ratios are always exact.
@@ -162,7 +162,7 @@ nil
 </section>
 
 <section>
-### Arithmetic
+### Aritmetiikka
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block111" ng-click="block111=!block111">Intro</button>
@@ -181,7 +181,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-### Infix vs. prefix notation
+### Infix vs. prefix notaatio
 {: .slide-title .slide}
 
 <button class="link" ng-bind-html="details1" ng-model="block121" ng-click="block121=!block121"></button>
@@ -207,9 +207,9 @@ Prefix: (+ (- (+ (+ 1 (/ (* 2 3) 4)) 5) (/ (* 6 7) 8)) 9)
 </section>
 
 <section ng-controller="NarrativeController">
-### Why prefix is better?
+### Miksi prefix on parempi?
 
-#### Explicit precedence <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
+#### Ekslpisiittinen arvojärjestys <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
 
 > Imagine both are unclear, but notice that in the prefix version,
 > you do not have to ever think about the precedence of operators.
@@ -223,7 +223,7 @@ Infix:  1 + 2 / 3
 Prefix: (+ 1 (/ 2 3))
 ```
 
-#### Less repetitive <button class="link" ng-bind-html="details" ng-model="block132" ng-click="block132=!block132"></button>
+#### Vähemmän toistoa <button class="link" ng-bind-html="details" ng-model="block132" ng-click="block132=!block132"></button>
 
 > Another reason prefix notation can be nice is that it can make long
 > expressions less repetitive.
@@ -238,7 +238,7 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 </section>
 
 <section ng-controller="NarrativeController">
-### Arithmetic with all number types
+### Aritmetiikkaa eri tyyppisillä arvoilla
 
 <button class="link" ng-bind-html="details" ng-model="block141" ng-click="block141=!block141"></button>
 
@@ -256,7 +256,7 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 
 
 <section ng-controller="NarrativeController">
-## Assignment: `def`
+## Alustus: `def`
 
 #### <button class="link" ng-model="block161" ng-click="block161=!block161">Intro</button>
 
@@ -268,7 +268,7 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 </section>
 
 <section ng-controller="NarrativeController">
-#### Assigning names to values: `def`
+#### Arvojen nimeäminen: `def`
 
 #### <button class="link" ng-bind-html="details" ng-model="block171" ng-click="block171=!block171"></button>
 
@@ -288,7 +288,7 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 </section>
 
 <section ng-controller="NarrativeController">
-#### Assign results to symbols <button class="link" ng-bind-html="details" ng-model="block181" ng-click="block181=!block181"></button>
+#### Tulosten asettaminen symboleihin <button class="link" ng-bind-html="details" ng-model="block181" ng-click="block181=!block181"></button>
 
 > You can assign more than simple values to symbols. Try the following.
 > Look at the last line, and see how we can use symbols by themselves to refer to a value.
@@ -303,19 +303,19 @@ average-fruit-amount
 </section>
 
 <section>
-#### EXERCISE 1: Basic arithmetic
+#### HARJOITUS 1: Perusaritmetiikka
 
-* How many minutes have elapsed since you arrived at the workshop today?
-* Convert this value from minutes to seconds.
+* Kuinka monta minuuttia on kulunut saapumisestasi työpajaan?
+* Muutta tämä arvo minuuteista sekunneiksi
 </section>
 
 <section>
-#### EXERCISE 2 [BONUS]: Minutes and seconds
+#### HARJOITUS 2 [BONUS]: Minuutit ja sekunnit
 
-* Convert 1000 seconds to minutes and seconds.
-* The minutes and the seconds will be separate numbers.
-* `(quot x y)` will give you the whole number part of x divided by y.
-* `(rem x y)` will give you the remainder of x divided by y.
+* Muunna 1000 seconds to minuuteiksi ja sekunneiksi
+* Minuutit ja sekunnit ovat eri arvoja
+* `(quot x y)` saat kokonaisluvun x jaettuna y:llä.
+* `(rem x y)` saat jakojäännöksen x jaettuna y:llä.
 </section>
 
 {% comment %}
