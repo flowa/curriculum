@@ -175,7 +175,7 @@ ng-click="block21=!block21"></button>
 > app:ssa siihen, että pidemmä kilpikonnamme kehikon ylä- ja alareunan välissä.
 {: ng-show="block62" .description}
 
-> Reference: [Conditional `cond`](http://clojurebridge.github.io/community-docs/docs/clojure/cond/)
+> Katso: [Conditional `cond`](http://clojurebridge.github.io/community-docs/docs/clojure/cond/)
 {: ng-show="block62" .description}
 
 ```clojure
