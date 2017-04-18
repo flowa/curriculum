@@ -292,6 +292,6 @@ instead. :star2:
 {% endcomment %}
 
 <section>
-Return to the <a href="javascript:;" onClick="Reveal.slide(1);">first slide</a>,
-or go to the [curriculum outline](/curriculum/#/1).
+Palaa <a href="javascript:;" onClick="Reveal.slide(1);">alkuun</a>,
+tai [sisällysluetteloon](/curriculum/#/1).
 </section>
