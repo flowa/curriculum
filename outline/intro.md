@@ -13,7 +13,7 @@ http://clojurebridge.github.io/curriculum/outline/intro.html
 {% endcomment %}
 
 <section>
-Introduction to Programming with Clojure
+Clojure intro
 ----------------------------------------
 {: .slide-title .chapter}
 
