@@ -17,12 +17,12 @@ Introduction to Programming with Clojure
 ----------------------------------------
 {: .slide-title .chapter}
 
-* Why Clojure?
-* What is Clojure good at?
-* What does Clojure look like?
+* Miksi Clojure?
+* Missä Clojure on hyvä?
+* Miltä Clojure näyttää?
     - Comments
-* What is a REPL?
-* REPL in action
+* Mikä on "Read Eval Print Loop"?
+* REPL Käytännössä
 </section>
 
 <section ng-controller="NarrativeController">
