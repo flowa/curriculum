@@ -20,7 +20,7 @@ Clojure intro
 * Miksi Clojure?
 * Missä Clojure on hyvä?
 * Miltä Clojure näyttää?
-    - Comments
+    - Koodi kommentit
 * Mikä on "Read Eval Print Loop"?
 * REPL Käytännössä
 </section>
