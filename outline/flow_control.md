@@ -13,7 +13,7 @@ http://clojurebridge.github.io/curriculum/outline/flow_control.html
 {% endcomment %}
 
 <section>
-Flow Control
+Suorituksenhallinta
 -------------------------
 {: .slide-title .chapter}
 
@@ -100,14 +100,14 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### Truthiness <button class="link" ng-bind-html="details" ng-model="block51" ng-click="block51=!block51"></button>
+#### Totuusarvo <button class="link" ng-bind-html="details" ng-model="block51" ng-click="block51=!block51"></button>
 
-> When testing the truth of an expression, Clojure considers the
-> values `nil` and `false` to be false and everything else to be true.
-> Here are some examples:
+> Kun testataan ilmauksen totuus arvoa, Clojure tulkitsee arvot
+> `nil` ja `false` epätodeksi ja kaiken muun todeksi.
+> tässä muutamia esimerkkejä:
 {: ng-show="block51" .description}
 
-> Reference: [Truthiness](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
+> Katso: [Truthiness](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
 {: ng-show="block51" .description}
 
 
@@ -130,14 +130,14 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section>
-#### EXERCISE 1: Y value within a frame
+#### HARJOITUS 1: Pidä Y:n arvo kehikon sisällä
 {: .slide_title .slide}
 
-* Write a function `y-within-frame` that takes y (vertical position) as an argument.
-* You may use if example in the slide.
-* The function should return the y value that won't exceed 150.
+* Kirjoita funktio `y-within-frame` joka ottaa y (vertikaalinen sijainti) argumenttina.
+* Voit hyödyntää esimerkkijä `if` (jos) kalvolta.
+* Funktion tulisi palauttaa y:n arvo siten ettei se ylitä arvoa 150.
 
-    - See: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
+    - Katso: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
 
 ```clojure
 ;; if example
