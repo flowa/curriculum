@@ -21,7 +21,7 @@ Funktiot
 * Funktioiden nimeäminen
 * [bonus section] Funktiot jotka ottavat argumentteina muita funktioita
     - `map` ja `reduce`
-* [bonus section] nimetön funktio
+* [bonus section] anonyymi funktio
 * [bonus section] Sijoitus: `let`
 </section>
 
@@ -146,7 +146,7 @@ Funktiot
 {: ng-show="block61" .description}
 
 > Symbols have to begin with a non-numeric character, and they can
-> contain alphanumeric characters, along with *, +, !, -, _, and ?.
+> contain alphanumeric characters, along with *, +, !, -, _, and curriculum outline?.
 > This flexibility is important with functions, as there are certain
 > idioms we use.
 {: ng-show="block61" .description}
@@ -177,7 +177,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### [Bonus section]
 
-### Functions that take other functions
+### Funktiot joiden argumentteina on toinen funktio
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
@@ -194,7 +194,7 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### `map` function
+#### `map` funktio
 
 #### <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
@@ -210,12 +210,12 @@ Funktiot
 (map (partial + 90) [0 30 60 90]) ;=> (90 120 150 180)
 ```
 
-> References:
+> Viittaus:
 > [partial](http://clojuredocs.org/clojure.core/partial)
 </section>
 
 <section ng-controller="NarrativeController">
-#### `reduce` function
+#### `reduce` funktio
 
 #### <button class="link" ng-bind-html="details" ng-model="block111" ng-click="block111=!block111"></button>
 
@@ -238,23 +238,23 @@ Funktiot
 </section>
 
 <section>
-#### EXERCISE 3 [BONUS]: Find the average
+#### HARJOITUS 3 [BONUS]: Keskiarvo
 {: .slide_title .slide}
 
-* Create a function called `average` that takes a vector of maps.
-* Use `[{:angle 30} {:angle 90} {:angle 50}]` as input.
-* Calculate average value of :angle.
+* Luo funktio `average` jonka argumenttina on vektori map-rakenteita.
+* käytä `[{:angle 30} {:angle 90} {:angle 50}]` rakennetta syötteenä
+* laske keskiarvo :angle avaimen arvoista.
 
-* Hint: You will need to use the functions `map`, `reduce` and `count`.
+* Vihje: Tarvitset funktioita `map`, `reduce` ja `count`.
 </section>
 
 
 <section ng-controller="NarrativeController">
 #### [Bonus section]
 
-### Anonymous functions
+### Anonyymit funktiot
 
-#### Functions without names <button class="link" ng-bind-html="details" ng-model="block201" ng-click="block201=!block201"></button>
+#### Nimettömät funktiot <button class="link" ng-bind-html="details" ng-model="block201" ng-click="block201=!block201"></button>
 
 > So far, all the functions we've seen have had names, like `+` and
 > `str` and `reduce`. However, functions don't need to have names, just
@@ -263,7 +263,7 @@ Funktiot
 > An anonymous function is created with `fn`, like so:
 {: ng-show="block201" .description}
 
-> Reference: [Anonymous Function](http://clojurebridge.github.io/community-docs/docs/clojure/anonymous-function/)
+> Katso: [Anonymous Function](http://clojurebridge.github.io/community-docs/docs/clojure/anonymous-function/)
 {: ng-show="block201" .description}
 
 
@@ -271,7 +271,7 @@ Funktiot
 (fn [s1 s2] (str s1 " " s2))
 ```
 
-#### vs. not anonymous functions <button class="link" ng-bind-html="details" ng-model="block202" ng-click="block202=!block202"></button>
+#### versus funktiot joilla on nimi <button class="link" ng-bind-html="details" ng-model="block202" ng-click="block202=!block202"></button>
 
 > Before we go forward, you should understand that you can _always_
 > feel free to name your functions. There is nothing wrong at all with
@@ -287,7 +287,7 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### Anonymous function usage examples <button class="link" ng-bind-html="details" ng-model="block203" ng-click="block203=!block203"></button>
+#### Esimerkkejä anonyymeistä funktioista <button class="link" ng-bind-html="details" ng-model="block203" ng-click="block203=!block203"></button>
 
 > Why would you ever need anonymous functions?
 > Anonymous functions can be very useful
@@ -311,7 +311,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### [Bonus section]
 
-### Assignment: `let`
+### Sijoitus: `let`
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block301" ng-click="block301=!block301">Intro</button>
@@ -325,7 +325,7 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### Assigning names to values: `let`
+#### Arvojen nimeäminen: `let`
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block305" ng-click="block305=!block305"></button>
@@ -346,7 +346,7 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### `let` example
+#### `let` esimerkki
 
 <button class="link" ng-bind-html="details1" ng-model="block311" ng-click="block311=!block311"></button>
 <button class="link" ng-bind-html="details2" ng-model="block312" ng-click="block312=!block312"></button>
@@ -397,6 +397,6 @@ instead. :star2:
 {% endcomment %}
 
 <section>
-Return to the <a href="javascript:;" onClick="Reveal.slide(1);">first slide</a>,
-or go to the [curriculum outline](/curriculum/#/1).
+Palaa <a href="javascript:;" onClick="Reveal.slide(1);">alkuun</a>,
+tai [sisällysluetteloon](/curriculum/#/1).
 </section>
