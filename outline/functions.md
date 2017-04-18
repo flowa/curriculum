@@ -13,20 +13,20 @@ http://clojurebridge.github.io/curriculum/outline/functions.html
 {% endcomment %}
 
 <section>
-Functions
+Funktiot
 -------------------------------
 {: .slide-title .chapter}
 
-* What are functions?
-* Naming functions
-* [bonus section] Functions that take other functions
-    - `map` and `reduce`
-* [bonus section] Anonymous function
-* [bonus section] Assignment: `let`
+* Mitä funktiot ovat?
+* Funktioiden nimeäminen
+* [bonus section] Funktiot jotka ottavat argumentteina muita funktioita
+    - `map` ja `reduce`
+* [bonus section] nimetön funktio
+* [bonus section] Sijoitus: `let`
 </section>
 
 <section ng-controller="NarrativeController">
-### What are functions?
+### Mitä funktiot ovat
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
@@ -50,7 +50,7 @@ Functions
 </section>
 
 <section ng-controller="NarrativeController">
-#### An example function <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
+#### Esimerkki funktio <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
 > * `defn` specifies that we are defining a function.
 > * `forward-right` is the *name* of this function.
@@ -69,7 +69,7 @@ Functions
 </section>
 
 <section ng-controller="NarrativeController">
-#### How to use `forward-right` function <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
+#### Kuinka käyttää `forward-right` funktiota <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
 > To use `forward-right`, we *call* the function, just like we've done with all the functions we've already used.
 {: ng-show="block31" .description}
@@ -81,7 +81,7 @@ Functions
 </section>
 
 <section ng-controller="NarrativeController">
-#### A function with multiple arguments <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
+#### Funktio jolla on useita argumentteja <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
 > Functions can also take more than one argument. Let's make a
 > `forward-right-with-len` function that takes a forward length, in addition
@@ -101,17 +101,17 @@ Functions
 </section>
 
 <section>
-#### EXERCISE 1: Move turtles using function
+#### HARJOITUS 1: Liikuta kilpikonnia käyttäen funktiota
 {: .slide_title .slide}
 
-1. Write a function
-  * Go to `walk.clj`
-  * On the editor, write `forward-right` function (below) which appeared in the slide.
-  * (Optional) Save `walk.clj`
-  * Select whole `forward-right` function and hit Eval Selection
-2. Use a function
-  * Type `(forward-right :trinity)` on right REPL pane
-  * Repeat above at least 8 times (use up arrow and hit enter)
+1. Kirjoita funktio
+  * Avaa `walk.clj`
+  * Kirjoita `forward-right` funktio (alla) 
+  * (Optio) Save `walk.clj`
+  * Maalaa kokonaan `forward-right` funktio ja klikkaa Eval Selection-painiketta
+2. Käytä funktiota
+  * Kirjoita `(forward-right :trinity)` REPLiin
+  * Toista tämä ainakin 8 kertaa (paina ylänuolta ja sen jälkeen enteriä)
 
 ```clojure
 (defn forward-right
@@ -123,23 +123,23 @@ Functions
 </section>
 
 <section>
-#### EXERCISE 2: Move turtles using function with parameters
+#### HARJOITUS 2: Siirrä kilpikonnia käyttäen funktiota joka käyttää useampaa argumenttia
 {: .slide_title .slide}
 
-* Go to `walk.clj`
-* On the editor, write `forward-right-with-len-ang` functon that takes three
-  arguments, turtle, len, and angle (extension of `forward-right-with-len`)
-* Select entire `forward-right-with-len-ang` function and hit Reload Selection
-* On the REPL pane, type `(forward-right-with-len-ang :trinity 60 120)`
-* Repeat above, evaluating the function on REPL, many times
+* Avaa `walk.clj`
+* Kirjoita `forward-right-with-len-ang` funktio joka käyttää kolmea
+  argumenttia, kilpikonna, len (matka), ja angle (kulma) (jatkoa `forward-right-with-len` funktiolle)
+* Maalaa `forward-right-with-len-ang` funktio ja paina "reload section" painiketta.
+* REPL:ssä kirjoita `(forward-right-with-len-ang :trinity 60 120)`
+* Toista REPL:ssä konta kertaa
 </section>
 
 
 <section ng-controller="NarrativeController">
-### Naming functions
+### Funktioiden nimeäminen
 {: .slide_title .slide}
 
-#### Names are Symbols <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
+#### Nimet ovat symboleita <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
 > Function names are symbols, just like the symbols we used with `def`
 > when assigning names to values.
@@ -151,7 +151,7 @@ Functions
 > idioms we use.
 {: ng-show="block61" .description}
 
-#### Two types of functions <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
+#### Two types of functions (POIS TÄMÄ KOKONAAN?)<button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
 > Clojure has two type of functions:
 > 1. function that returns a value,
