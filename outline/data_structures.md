@@ -13,16 +13,16 @@ http://clojurebridge.github.io/curriculum/outline/data_structures.html
 {% endcomment %}
 
 <section>
-Data Structures
+Tietorakenteet
 ----------------------------------------
 {: .slide-title .chapter}
 
-* Vectors
-* Maps
+* Vektorit
+* Mapit
 </section>
 
 <section>
-### Group of data - Collections
+### Nippu dataa - Kokoelmat
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
@@ -40,10 +40,10 @@ collections together.
 </section>
 
 <section ng-controller="NarrativeController">
-### Vectors
+### Vektorit
 {: .slide_title .slide}
 
-#### Sequential collection <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
+#### Peräkkäinen kokoelma <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
 > A vector is a sequential collection of values. A vector may be
 > empty. A vector may contain values of different types.
@@ -52,7 +52,7 @@ collections together.
 > looking them up.
 {: ng-show="block21" .description}
 
-#### Compartment-like structure <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
+#### Lokeromainen rakenne <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
 > To imagine a vector, imagine a box split into some number of
 > equally-sized compartments. Each of those compartments has a number.
@@ -69,7 +69,7 @@ collections together.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Syntax <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
+#### Syntaksi <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
 >Vectors are written using square brackets with any number of pieces
 >of data inside them, separated by spaces. Here are some examples of
@@ -84,11 +84,10 @@ collections together.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Example <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
+#### Esimerkki <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
-> When there are a couple of turtles,
-> `(turtle-names)` command will return turtle names in the form of a
-> vector.
+> `(turtle-names)` komento palauttaa kilpikonnien nimet
+> vektorissa.
 {: ng-show="block41" .description}
 
 ```clojure
@@ -99,7 +98,7 @@ collections together.
 
 
 <section ng-controller="NarrativeController">
-#### Creation <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
+#### Luominen <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
 > The next two functions are used to make new vectors. The `vector`
 > function takes any number of items and puts them in a new vector.
@@ -121,7 +120,7 @@ collections together.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Extraction <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
+#### Käsittely <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
 > Now, take a look at these four functions. `count` gives us a
 count of the number of items in a vector. `nth` gives us the nth
@@ -146,28 +145,26 @@ be confusing.
 </section>
 
 <section>
-#### EXERCISE 1: See turtle names
+#### HARJOITUS 1: Kilpikonnien nimet
 {: .slide_title .slide}
 
-1. Add a turtle using a piece of code in the file
+1. Lisää kilpikonna
   * Go to `walk.clj` file
-  * Add a line: `(add-turtle :neo)` on the last of `walk.clj` file
-  * Select this line and click "Reload Selection"
-2. (Optional) add a turtle using REPL
-  * Type `(add-turtle :oracle)` followed by enter on the bottom REPL pane
-3. See turtle names
-  * Type `(turtle-names)` on the bottom REPL pane and see the result
+  * Lisää rivi: `(add-turtle :neo)` viimeiseksi riviksi `walk.clj` tiedostossa
+  * valitse rivi ja klikkaa "Reload Selection"
+2. (Optio) Lisää kilpikonna REPL:n kautta
+  * kirjoita `(add-turtle :oracle)` ja paina enteriä replissä
+3. Tulosta kilpikonnien nimet
+  * Kirjoita `(turtle-names)` REPLissä ja katso tulosta
 </section>
 
 <section>
-#### EXERCISE 2: Make a vector
+#### HARJOITUS 2: Tee vektori
 {: .slide_title .slide}
 
-* Go to `myproject`'s `core.clj` and start InstaREPL
-* Make a vector of the high temperatures for the next 7 days in the
-  town where you live.
-* Then use the `nth` function to get the high temperature for next
-  Tuesday.
+* Mene `myproject`'n `core.clj` tiedostoon ja käynnistä REPL
+* Tee Vektori seuraavan 7 päivän lämpötiloista valitsemastasi kaupungista
+* Käytä sitten `nth` funktiota ja hae seuraavan tiistain lämpötila
 </section>
 
 
