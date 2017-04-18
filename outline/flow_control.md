@@ -134,7 +134,7 @@ ng-click="block21=!block21"></button>
 {: .slide_title .slide}
 
 * Kirjoita funktio `y-within-frame` joka ottaa y (vertikaalinen sijainti) argumenttina.
-* Voit hyödyntää esimerkkijä `if` (jos) kalvolta.
+* Voit hyödyntää esimerkkiä `if` (jos) kalvolta.
 * Funktion tulisi palauttaa y:n arvo siten ettei se ylitä arvoa 150.
 
     - Katso: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
