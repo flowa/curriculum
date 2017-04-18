@@ -87,7 +87,7 @@ Clojure intro
 > built-in ways to represent data that are easy to use and powerful.
 {: ng-show="block22" .description}
 
-#### Samainaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
+#### Samanaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
 > Clojure is known for its concurrency. Think about writing
 > instructions for four of your friends about how to assemble a
