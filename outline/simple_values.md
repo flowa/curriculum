@@ -13,7 +13,7 @@ http://clojurebridge.github.io/curriculum/outline/simple_values.html
 {% endcomment %}
 
 <section>
-Muuttujat
+Yksinkertaiset arvot
 ----------------------------------------
 {: .slide-title .chapter}
 
@@ -27,7 +27,7 @@ Muuttujat
 </section>
 
 <section>
-## Muuttujat
+## Yksinkertaiset arvot
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
 
