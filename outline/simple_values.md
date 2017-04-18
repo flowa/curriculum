@@ -209,7 +209,7 @@ Prefix: (+ (- (+ (+ 1 (/ (* 2 3) 4)) 5) (/ (* 6 7) 8)) 9)
 <section ng-controller="NarrativeController">
 ### Miksi prefix on parempi?
 
-#### Ekslpisiittinen arvojärjestys <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
+#### Eksplisiittinen arvojärjestys <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
 
 > Imagine both are unclear, but notice that in the prefix version,
 > you do not have to ever think about the precedence of operators.
