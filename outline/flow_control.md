@@ -23,46 +23,47 @@ Flow Control
 </section>
 
 <section ng-controller="NarrativeController">
-### What is flow control?
+### Mitä on suorituksenhallinta (flow control)?
 {: .slide_title .slide}
 
-#### Decisions how to react <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
+#### Päätös siitä kuinka reagoida <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
 
-> "Flow control" is the programming term for deciding how to react to
-> a given circumstance. We make decisions like this all the time. *If*
-> it's a nice day out, *then* we should visit the park; *otherwise* we
-> should stay inside and play board games. *If* your car's tank is
-> empty, *then* you should visit a gas station; *otherwise* you should
-> continue to your destination.
+> Suorituksenhallinta ("Flow control") on ohjelmointi termi joka viittaa 
+> siihen miten sovellus toimii missäkin tapauksessa. Teemme jatkuvasti 
+> tällaisia päätöksiä osana arkea. *Jos* on kaunis päivä, *niin* suuntaa
+> puistoon, *muutoin* pysy sisällä ja pelaa lautapelejä. *Jos* autosi
+> tankki on tyhjä, *niin* pysähdy bensa-asemalla, *muutoin* jatka matkaasi 
+> kohti määränpäätäsi.
 {: ng-show="block11" .description}
 
-#### Testing conditions to react <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Reagointi ehtojen testaaminen <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> Software is also full of these decisions. *If* the user's input is
-> valid, *then* we should save her data; *otherwise* we show an error
-> message. The common pattern here is that you test some condition and
-> react differently based on whether the condition is *true* or *false*.
+> Myös sovellukset ovat täynnä tällaisia valintoja. *Jos* käyttäjän 
+> syöte on validi, *niin* tallenna tiedot; *muutoin* näytä virheviesti.
+> Tyypillinen toiminta tapa on testata ensin jotain ehtoa ja tämän jälkeen
+> toimia eritavoin riippuen siitä oliko ehto *tosi* or *epätosi*.
 {: ng-show="block12" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-### `if`
+### `if` (jos)
 {: .slide_title .slide}
 
 <button class="link" ng-bind-html="details1" ng-model="block21"
 ng-click="block21=!block21"></button>
 <button class="link" ng-bind-html="details2" ng-model="block22" ng-click="block22=!block22"></button>
 
-> In Clojure, the most basic tool we have for the flow control is the `if`
-> operator. Here's the example how you might code the data validation scenario.
+> Clojuressa kaikista perustavin työkalu suorituksenhallintaan on `if`
+> operaattori. Seuraava erimerkki havainnollistaa tiedon oikeellisuuden
+> tarkastamista koodilla:
 {: ng-show="block21" .description}
 
-> Here' an example. If adding 40 to `y` is still less than 150, then
-> return `(+ y 40)`; otherwise, returns -150. (As for turtle app's
-> frame, the top has 150 in y, while the bottom has -150 in y.)
+> Esimerkki. Jos lisättyäsi 40 `y`:hyn, se on edelleen alle 150, niin
+> palauta `(+ y 40)`; muutoin, palauta -150. (Ajattelen turtle app:n
+> kehikkoa (frame), yläreunan y on 150 ja alareunan -150.)
 {: ng-show="block22" .description}
 
-> Reference: [Conditional `if`](http://clojurebridge.github.io/community-docs/docs/clojure/if/)
+> Katso lisää: [Conditional `if`](http://clojurebridge.github.io/community-docs/docs/clojure/if/)
 {: ng-show="block22" .description}
 
 ```clojure
@@ -73,7 +74,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### General form of `if` operator
+#### `if` operaattorin yleinen muoto
 
 ```clojure
 (if conditional-expression
@@ -83,7 +84,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### `if` examples
+#### `if` esimerkkejä
 
 ```clojure
 (if (> 3 1)
@@ -159,18 +160,19 @@ ng-click="block21=!block21"></button>
 <button class="link" ng-bind-html="details1" ng-model="block61" ng-click="block61=!block61"></button>
 <button class="link" ng-bind-html="details2" ng-model="block62" ng-click="block62=!block62"></button>
 
-> The `if` operator takes only one predicate.
-> When we want to use multiple predicates, `if` is not a good option.
-> We have to write nested, nested, ... and nested `if` conditions.
-> To branch to multiple situations, `cond` operator works well.
+> `if` operaattori sallii vain yhden ehdon (predikaatin)
+> Kun haluamme käyttää useita ehtoja, niin `if` on huono valinta.
+> Meidän täytyisi tällöin kirjoittaa useita sisäkkäisiä `if` ehtoja.
+> Kun sovelluslogiikka haarautuu useiksi ehdoiksi, `cond` operattori toimii 
+> huomattavasti parammin.
 {: ng-show="block61" .description}
 
-> Here's the example. If adding 40 to y exceeds 150, evaluate the
-> first form. In this case, it returns -150. If adding 40 to y is less
-> than -150, evaluate the second form. In this case, it returns 150.
-> If both two predicates return false, evaluate the `:else` form. In
-> this case, it returns y plus 40. If we use this function in the
-> turtle app, we can keep our turtle between top and bottom of the frame.
+> Esimerkki. Jos lisättyäsi 40 `y`:hyn se ylittää 150, suorita ensimmäinen
+> muoto. Tässä tapauksessa, sovellus palauttaa -150. Jos lisäämällä 40 `y`:hyn
+> tulos on vähemmän kuin -150, suorita toinen muoto. Tässä tapauksessa, sovellus 
+> palauttaa 150. Jos molemmat ehdot ovat epätoseja, suorita `:else` muoto. Tässä 
+> tapauksessa sovellus palauttaa `y` + 40. Voisimme käyttää tätä funktiota turtle
+> app:ssa siihen, että pidemmä kilpikonnamme kehikon ylä- ja alareunan välissä.
 {: ng-show="block62" .description}
 
 > Reference: [Conditional `cond`](http://clojurebridge.github.io/community-docs/docs/clojure/cond/)
@@ -185,7 +187,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### General form of `cond` operator
+#### `cond` operaattorin yleinen muoto
 
 ```clojure
 (cond
@@ -197,20 +199,20 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section>
-#### EXERCISE 2: Y value within a frame - part 2
+#### HARJOITUS 2: Y:n arvo kehikossa - osa 2
 {: .slide_title .slide}
 
-> The function we wrote in the previous exercise, `y-within-frame`, has
-> a flaw. If the given y value is -1000, the function will return -960.
-> Since y value of the frame bottom is -150, -960 is beyond that.
-> Your turtle will go invisible area. Let's make it real within-frame
-> function using `cond`.
+> Edellisen harjoituksen funktiossa `y-within-frame` oli yksi vika.
+> Jos annetu arvo oli -1000, funktio palautti -960. Koska kehikon alareunan 
+> y:n arvo oli -150, -960 on sen tuollapuolen, ja siten kilpikonnasi 
+> päätyy näkymättömälle alueelle. Tehdään seuraavaksi paremmin toimiva 
+> `within-frame` funktio käyttäen `cond`-operaattoria.
 
-* Write a function `y-within-frame-cond` that takes y (vertical position) as an argument.
-* You may use `cond` example in the slide.
-* The function should return the y value between -150 and 150.
+* Kirjoita funktio `y-within-frame-cond` joka ottaa y:n (vertikaalinen sijainti) argumenttina.
+* Voit käyttää hyödyksi `cond`-operaattorin esimerkki kalvoa.
+* Funktion tulisi palauttaa y:n arvo väliltä -150 ja 150.
 
-    - See: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
+    - Katso: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
 
 ```clojure
 ;; usage of y-within-frame-cond function
@@ -221,31 +223,34 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-### Boolean logic with `and`, `or`, and `not`
+### Boolean logiikka `and`, `or`, ja `not` operaattoreilla
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block81" ng-click="block81=!block81">Intro</button>
 
-> `if` statements are not limited to testing only one thing. You can
-> test multiple conditions using boolean logic. _Boolean logic_ refers
-> to combining and changing the results of predicates using `and`,
-> `or`, and `not`.
+> `if` muoto ei rajoitus vain yhden asian testaamiseen. Voit testata 
+> useita ehtoja käyttäen predikaatti logiikkaa. _Predikaatti logiikka_ 
+> viittaa ehtojen tulosten yhdistelyyn ja muuttamiseen hyödyntäen 
+> predikaatti logiikan ja (`and`), tai (`or`), ja negaatio (`not`) 
+> operaatioita.
 {: ng-show="block81" .description}
 
-> If you've never seen this concept in programming before, remember
-> that it follows the common sense way you look at things normally. Is
-> this _and_ that true? Only if both are true. Is this _or_ that true?
-> Yes, if either -- or both! -- are. Is this _not_ true? Yes, if it's
-> false.
+> Ellet ole aiemmin törmännyt tähän käsitteeseen ohjelmoinnissa, 
+> muista että arkinen järkeily riittää: Milloin väittämä tämä _ja_ 
+> tuo tosi? Silloin kuin molemmat ehdot ovat tosia. Milloin väittämä tämä 
+> _tai_ tuo on tosi? Juuri niin, jos jompikumpi -- tai molemmat -- ovat
+> tosia. Milloin väittämä 'tämä _ei_ ole tosi' on tosi? Silloin tämä on 
+> epätosi.
 {: ng-show="block81" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-### Truthy and falsey table <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
+### Totuusarvo taulukko <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
 
-> `and`, `or`, and `not` work like other functions (they aren't
-> exactly functions, but work like them), so they are in _prefix
-> notation_, like we've seen with arithmetic.
+> `and`, `or`, ja `not` toimivat kuten muut funktio (tarkasti 
+> ottaen ne eivät ole funktioita, mutta käyttäytyvä samoin).
+> Niitä käytetään _prekiksi notaatiolla_ kuten kuten olemme 
+> nähneet arimeettisten funktioiden toimivan.
 {: ng-show="block91" .description}
 
 | x     | y     | (`and` x y) | (`or` x y) | (`not` x) | (`not` y) |
@@ -258,10 +263,11 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### `and`, `or`, and `not` combination <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+#### `and`, `or`, ja `not` kombinaatiot <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
-> `and`, `or`, and `not` can be combined. This can be hard to read.
-> Here's an example:
+> `and`, `or`, ja `not` operaattoreita voi yhdellä. 
+> Tämä saattaa tehdä koodista vaikealukuista
+> Esimerkki:
 {: ng-show="block101" .description}
 
 ```clojure
@@ -275,11 +281,11 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### [Bonus] `cond`, `and`, `or`, and `not` combination <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
+#### [Bonus] `cond`, `and`, `or`, ja `not` yhdistely <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
 
-> We have learned `cond`, `and`, `or`, and `not`. Let's think what function we can write
-> combining those.
-> Here's an example:
+> Olemme nyt oppineet käyttämään muotoja `cond`, `and`, `or`, ja `not`. 
+> Pohditaan seuraavaksi millaisen funktion voimme niitä hyödyntäen toteuttaa.
+> Tässä esimerkki:
 {: ng-show="block110" .description}
 
 ```clojure
@@ -302,11 +308,11 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section>
-#### EXERCISE 3: [Bonus] Complete `true-or-false?` function
+#### HARJOITUS 3: [Bonus] Viimeistel `true-or-false?` funktio
 {: .slide_title .slide}
 
-> `true-or-false?` function in previous slide sees only `:and`
-> operation. Add `:or`, `:not` operation in the function.
+> Edellisen kalvon `true-or-false?` funktio tuki vain `:and`
+> operaatiota. Lisää tuki `:or` ja `:not` operaatioille.
 
 * Use `core.clj` of `myproject` and InstaREPL
 * Add `(= op :or)` and `(= op :not)` in `cond`
@@ -328,6 +334,6 @@ instead. :star2:
 {% endcomment %}
 
 <section>
-Return to the <a href="javascript:;" onClick="Reveal.slide(1);">first slide</a>,
-or go to the [curriculum outline](/curriculum/#/1).
+Palaa <a href="javascript:;" onClick="Reveal.slide(1);">ensimmäiselle kalvolle</a>,
+tai mene [sisällysluetteloon](/curriculum/#/1).
 </section>
