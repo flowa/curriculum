@@ -169,9 +169,9 @@ be confusing.
 
 
 <section ng-controller="NarrativeController">
-### Maps
+### Mapit 
 
-#### key value pairs <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+#### Avain arvo-parit <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 >Maps hold a set of keys and values associated with them. You can
 >think of it like a dictionary: you look up things using a word (a
@@ -184,7 +184,7 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Syntax <button class="link" ng-bind-html="details" ng-model="block102" ng-click="block102=!block102"></button>
+#### Syntaksi <button class="link" ng-bind-html="details" ng-model="block102" ng-click="block102=!block102"></button>
 
 > We write maps by enclosing alternating keys and values in curly braces, like so.
 {: ng-show="block102" .description}
@@ -205,10 +205,10 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Example <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
+#### Esimerkki <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
 
-> When turtle received commands such that `forward` or `right`,
-> those return the result as a form of map of map.
+> kilpikonnien `forward` ja `right` komennot palauttavat 
+> tuloksen mappina mäpin sisällä
 {: ng-show="block103" .description}
 
 ```clojure
@@ -220,7 +220,7 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Creation <button class="link" ng-bind-html="details" ng-model="block104" ng-click="block104=!block104"></button>
+#### Luominen <button class="link" ng-bind-html="details" ng-model="block104" ng-click="block104=!block104"></button>
 
 > `assoc` and `dissoc` are paired functions: they associate and disassociate items from a map. See how we add the last name "Brown" to the map with `assoc`, and then we remove it with `dissoc`. `merge` merges two maps together to make a new map.
 {: ng-show="block104" .description}
