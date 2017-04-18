@@ -238,7 +238,7 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Extraction 1 <button class="link" ng-bind-html="details" ng-model="block105" ng-click="block105=!block105"></button>
+#### Käsittely 1 <button class="link" ng-bind-html="details" ng-model="block105" ng-click="block105=!block105"></button>
 
 > `count`, every collection has this function. Why do you think the
 > answer is two? `count` is returning the number of associations.
@@ -267,7 +267,7 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Extraction 2 <button class="link" ng-bind-html="details" ng-model="block106" ng-click="block106=!block106"></button>
+#### Käsittely 2 <button class="link" ng-bind-html="details" ng-model="block106" ng-click="block106=!block106"></button>
 
 > Then we have `keys` and `vals`, which are pretty simple: they return
 > the keys and values in the map. The order is not guaranteed, so we
@@ -284,7 +284,7 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Update <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
+#### Päivittäminen <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
 
 > After the creation, we want to save a new value associated to the
 > key. The `assoc` function can be used by assigning a new value to
@@ -314,7 +314,7 @@ be confusing.
 
 
 <section>
-### Collections of Collections
+### Kokoelmien kokoelmat
 
 #### <button class="link" ng-model="block101" ng-click="block101=!block101">Intro</button>
 
@@ -326,7 +326,7 @@ be confusing.
 </section>
 
 <section>
-#### Vector of Maps
+#### Vektori mappeja
 
 ```clojure
 (state-all)
@@ -344,7 +344,7 @@ be confusing.
 </section>
 
 <section>
-#### Map of Maps
+#### Mappi mappeja
 
 ```clojure
 (def st (first states))
@@ -365,14 +365,14 @@ st
 
 
 <section>
-#### EXERCISE 3: See turtles states
+#### HARJOTUS 3: Kilpikonnien tilat
 {: .slide_title .slide}
 
-* Go to `walk.clj` file
-* Try examples of previous two slides on the REPL
-* See what values you get
+* Avaa `walk.clj` tiedosto
+* Kokeile esimerkkejä edelliseltä sivulta
+* Mitä arvoja saat?
 
-> Don't forget to hit __enter__ when you type code on the REPL
+> Älä unohda painaa __enteriä__ Replissä komentojen jälkeen
 
 
 ```clojure
@@ -387,22 +387,22 @@ st
 </section>
 
 <section>
-#### EXERCISE 4: Modeling Yourself
+#### HARJOITUS 4: Mallinna itsesi
 {: .slide_title .slide}
 
-* Use the `myproject`'s `core.clj` and InstaREPL
-* Make a map representing yourself
-* Make sure it contains your first name and last name
-* Then, add your hometown to the map using [assoc](http://grimoire.arrdem.com/1.6.0/clojure.core/assoc/) or [merge](http://grimoire.arrdem.com/1.6.0/clojure.core/merge/).
+* Avaa `myproject`:n `core.clj` ja InstaREPL
+* Tee Map-rakenne itsestäsi
+* Lisää ainakin etunimesi ja sukunimesi
+* Sitten lisää kotikaupunkisi käyttäen [assoc](http://grimoire.arrdem.com/1.6.0/clojure.core/assoc/) tai [merge](http://grimoire.arrdem.com/1.6.0/clojure.core/merge/) funktioita.
 </section>
 
 <section>
-#### EXERCISE 5 [BONUS]: Modeling your classmates
+#### HARJOITUS 5 [BONUS]: Mallinna kurssitovereistasi
 {: .slide_title .slide}
 
-* First, take the map you made about yourself in previous exercise.
-* Then, create a vector of maps containing the first name, last name and hometown of two or three other classmates around you.
-* Lastly, add your map to their information using [conj](http://grimoire.arrdem.com/1.6.0/clojure.core/conj/).
+* Ota talteen aikaisemmassa harjoituksessa tekemästi Map-rakenne itsestäsi
+* Luo sitten vektori joka sisältää map-rakenteet muutamasta kurssitoveristasi (ainakin etunimi, sukunimi ja kotikaupunki)
+* Viimeiseksi lisää omat tietosi vektoriin käyttäen [conj](http://grimoire.arrdem.com/1.6.0/clojure.core/conj/) funktiota.
 </section>
 
 {% comment %}
