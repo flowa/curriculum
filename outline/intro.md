@@ -26,7 +26,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-## Why Clojure?
+## Miksi Clojure?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
@@ -43,7 +43,7 @@ Clojure intro
 > language to learn in addition to others you might already know:
 {: ng-show="block11" .description}
 
-#### Clojure is _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Clojure on _yksinkertainen_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
 > Clojure is _simple_. That's not to say it's not powerful; it is. The
 > number of concepts you have to know to program in Clojure is very
@@ -52,7 +52,7 @@ Clojure intro
 > language.
 {: ng-show="block12" .description}
 
-#### Clojure is _all-purpose_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
+#### Clojure on  _yleiskäyttöinen_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
 > Clojure is _all-purpose_. Some languages have a specific focus.
 > JavaScript, for example, was traditionally used only in web pages
@@ -61,7 +61,7 @@ Clojure intro
 > you can use Clojure for any sort of application easily.
 {: ng-show="block13" .description}
 
-#### Clojure is _fun_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
+#### Clojure on _hauskaa!_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
 
 > Clojure is _fun_. That's a matter of opinion, of course, but we
 > think it holds true. I hope that during this course you experience
@@ -71,7 +71,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-## What is Clojure good at?
+## Missä Clojure on hyvä?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block21" ng-click="block21=!block21">Intro</button>
@@ -80,14 +80,14 @@ Clojure intro
 > doesn't have strong suits, though.
 {: ng-show="block21" .description}
 
-#### Data processing <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
+#### Tiedon käsittelyssä <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
 > Clojure is known for being good at data processing. That's because
 > it has a good set of data structures--that is, it has several
 > built-in ways to represent data that are easy to use and powerful.
 {: ng-show="block22" .description}
 
-#### Concurrency <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
+#### Samainaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
 > Clojure is known for its concurrency. Think about writing
 > instructions for four of your friends about how to assemble a
@@ -100,7 +100,7 @@ Clojure intro
 > some easy ways to write these sorts of instructions for computers.
 {: ng-show="block23" .description}
 
-#### Everything! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
+#### Kaikessa! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
 
 > Clojure also works well for building drawing applications with
 > [Quil](https://github.com/quil/quil), which is what we're going to
@@ -109,7 +109,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-## What does Clojure look like?
+## Miltä Clojure näyttää?
 {: .slide_title .slide}
 
 ```clojure
@@ -118,7 +118,7 @@ Clojure intro
 (forward :trinity 40)
 ```
 
-#### Parentheses <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
+#### Sulkeet <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
 > Notice the parentheses. Parentheses enclose instructions to the
 > computer in Clojure. A left parenthesis
@@ -127,7 +127,7 @@ Clojure intro
 > of nested parentheses, or in other words, nested enclosing instructions.
 {: ng-show="block31" .description}
 
-#### Functions <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
+#### Funktiot <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
 
 > Next to the parentheses, we see the instructions to the
 > computer. That instruction is normally what we call a _function_.
@@ -137,7 +137,7 @@ Clojure intro
 > Clojure functions always return a value.
 {: ng-show="block32" .description}
 
-#### Arguments <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
+#### Argumentit <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
 > Many functions take in _arguments_--which are everything else inside
 > the enclosing parentheses after the function--.
@@ -149,7 +149,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-### Comments
+### Koodi kommentit
 
 <button class="link" ng-bind-html="details1" ng-model="block41" ng-click="block41=!block41"></button>
 <button class="link" ng-bind-html="details2" ng-model="block42" ng-click="block42=!block42"></button>
@@ -181,7 +181,7 @@ Clojure intro
 </section>
 
 <section>
-## What is a REPL?
+## Mikä on "Read Eval Print Loop"?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block51" ng-click="block51=!block51">Intro</button>
@@ -200,7 +200,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-## REPL in action
+## REPL käytännössä
 {: .slide_title .slide}
 
 
@@ -211,7 +211,7 @@ Clojure intro
 {: ng-show="block61" .description}
 
 
-#### Using the REPL <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
+#### REPL:n käyttö <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
 > Nightcode has a project setting aware REPL on a bottom pane.
 >  When "Run with REPL" button gets clicked, this REPL starts.
@@ -223,7 +223,7 @@ Clojure intro
 {: ng-show="block62" .description}
 
 
-#### Evaluate program and line <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
+#### Evaluoi ohjelma tai rivi <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
 
 <!-- TODO project_name should probably be defined somewhere, right? -->
 > Nightcode also lets us evaluate an entire file (program) or line(s).
