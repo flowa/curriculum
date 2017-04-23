@@ -9,6 +9,7 @@ permalink: /outline/functions.html
 {% comment %}
 
 http://clojurebridge.github.io/curriculum/outline/functions.html
+
 http://flowa.github.io/curriculum/outline/functions.html
 
 {% endcomment %}
