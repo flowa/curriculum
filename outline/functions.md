@@ -300,18 +300,19 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### [Bonus section]
+#### [Bonusosio]
 
 ### Sijoitus: `let`
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block301" ng-click="block301=!block301">Intro</button>
 
-> When you are creating functions, you may want to assign names to
-> values in order to reuse those values or make your code more
-> readable. Inside of a function, however, you should _not_ use `def`,
-> like you would outside of a function. Instead, you should use a
-> special form called `let`.
+> Kun luot funktioita, saatat haluta antaa arvoille nimiä, 
+> jotta voit käyttää arvoja uudelleen tai koska haluat tehdä
+> koodistasi helpommin luettavaa ja ymmärrettävää.
+> Funktion sisällä ei kuitenkaan tule käyttää `def` -komentoa
+> kuten ehkä tekisit funktion ulkopuolella.
+> Sen sijaan käytössä on komento nimeltä `let`.
 {: ng-show="block301" .description}
 </section>
 
