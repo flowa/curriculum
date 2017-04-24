@@ -264,10 +264,10 @@ Funktiot
 
 #### vastaan funktiot, joilla on nimi <button class="link" ng-bind-html="details" ng-model="block202" ng-click="block202=!block202"></button>
 
-> Before we go forward, you should understand that you can _always_
-> feel free to name your functions. There is nothing wrong at all with
-> doing that. However, you _will_ see Clojure code with anonymous
-> functions, so you should be able to understand it.
+> Ennen kuin siirrymme eteenpäin on hyvä tehdä selväksi, että voit _aina_ antaa funktiolle nimen.
+> Siinä ei ole siis mitään väärää.
+> Tulet kuitenkin varmuudella näkemään Clojure-koodia, jossa käytetään anonyymejä funktioita,
+> joten on hyvä ymmärtää mitä ne ovat.
 {: ng-show="block202" .description}
 
 ```clojure
