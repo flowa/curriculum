@@ -233,9 +233,9 @@ Funktiot
 #### HARJOITUS 3 [BONUS]: Keskiarvo
 {: .slide_title .slide}
 
-* Luo funktio `average` jonka argumenttina on vektori map-rakenteita.
-* käytä `[{:angle 30} {:angle 90} {:angle 50}]` rakennetta syötteenä
-* laske keskiarvo :angle avaimen arvoista.
+* Luo funktio `average`, jonka parametrina on vektori map-rakenteita.
+* Käytä `[{:angle 30} {:angle 90} {:angle 50}]` rakennetta syötteenä
+* Laske keskiarvo :angle avaimen arvoista.
 
 * Vihje: Tarvitset funktioita `map`, `reduce` ja `count`.
 </section>
@@ -248,11 +248,10 @@ Funktiot
 
 #### Nimettömät funktiot <button class="link" ng-bind-html="details" ng-model="block201" ng-click="block201=!block201"></button>
 
-> So far, all the functions we've seen have had names, like `+` and
-> `str` and `reduce`. However, functions don't need to have names, just
-> like values don't need to have names. We call functions without names
-> *anonymous functions*.
-> An anonymous function is created with `fn`, like so:
+> Tähän asti, kaikilla käsitellyillä funktioilla on ollut nimi kuten `+`, `str` ja `reduce`.
+> Funktioilla ei kuitenkaan ole pakko olla nimeä, aivan kuten arvoillakaan ei täydy.
+> Nimettömiä funktioita kutsutaan nimellä *anonyymit funktiot*
+> Anonyymin funktion luomiseen käytetään komentoa `fn`.
 {: ng-show="block201" .description}
 
 > Katso: [Anonymous Function](http://clojurebridge.github.io/community-docs/docs/clojure/anonymous-function/)
@@ -263,7 +262,7 @@ Funktiot
 (fn [s1 s2] (str s1 " " s2))
 ```
 
-#### versus funktiot joilla on nimi <button class="link" ng-bind-html="details" ng-model="block202" ng-click="block202=!block202"></button>
+#### vastaan funktiot, joilla on nimi <button class="link" ng-bind-html="details" ng-model="block202" ng-click="block202=!block202"></button>
 
 > Before we go forward, you should understand that you can _always_
 > feel free to name your functions. There is nothing wrong at all with
