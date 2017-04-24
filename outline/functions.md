@@ -356,9 +356,9 @@ Funktiot
 > Lisäksi asetamme koodin `(last names)` arvon nimeen `t2`.
 {: ng-show="block312" .description}
 
-> After the vector of names and values, there is the body of the
-> `let`. Just like a the body of a function, this executes and returns
-> a value. Within the `let`, `t1` and `t2` are defined.
+> Nimi-arvoparivektorin jälkeen seuraa `let`in runko-osa.
+> Aivan kuten funktion runko, tämä suoritetaan ja siitä palautuu arvo.
+> `t1` ja `t2` ovat määriteltyjä (=näkyvät) vain `let`in sisällä.
 {: ng-show="block313" .description}
 
 > Go to `walk.clj` and write `opposite` function.
