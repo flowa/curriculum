@@ -166,18 +166,18 @@ Funktiot
 </section>
 
 <section ng-controller="NarrativeController">
-#### [Bonus section]
+#### [Bonusosio]
 
-### Funktiot joiden argumentteina on toinen funktio
+### Funktiot joiden parametrina on toinen funktio
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
 
-> Some of the most powerful functions you can use with collections can
-> take other functions as arguments.
-> This is one of the most magical things about Clojure--and many other programming languages.
-> That's a complicated idea, also, may not make sense at first.
-> Let's look at an example and learn more about that.
+> Osa kaikkein tehokkaimmista tietorakenteiden kanssa käytettävistä funktioista
+> ottavat toisia funktioita parametreinaan.
+> Tämä on yksi taianomaisimmista asioista Clojuressa - ja monessa muusakin ohjelmointikielessä.
+> Ajatus voi tuntua ensialkuun monimutkaiselta eikä välttämättä aukene välittömästi.
+> Katsotaan esimerkki ja opitaan lisää aiheesta.
 {: ng-show="block71" .description}
 
 > Reference: [Higher-order Function](http://clojurebridge.github.io/community-docs/docs/clojure/higher-order-function/)
