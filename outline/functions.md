@@ -351,10 +351,9 @@ Funktiot
 > ihan kuten muissakin funktioissa
 {: ng-show="block311" .description}
 
-> Next, we see `let`. `let` takes a vector of alternating names and
-> values. `t1` is the first name, and we assign the result of
-> `(first names)` to it. We also assign the result of `(last names)`
-> to `t2`.
+> Seuraavaksi vastassa on `let`. `let` ottaa vektorin nimiä ja niihin asetettavia arvoja.
+> `t1` on ensimmäinen nimi. Asetamme siihen arvon, joka saadaan koodista `(first names)`. 
+> Lisäksi asetamme koodin `(last names)` arvon nimeen `t2`.
 {: ng-show="block312" .description}
 
 > After the vector of names and values, there is the body of the
