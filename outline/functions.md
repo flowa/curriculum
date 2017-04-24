@@ -242,7 +242,7 @@ Funktiot
 
 
 <section ng-controller="NarrativeController">
-#### [Bonus section]
+#### [Bonusosio]
 
 ### Anonyymit funktiot
 
@@ -280,11 +280,11 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### Esimerkkejä anonyymeistä funktioista <button class="link" ng-bind-html="details" ng-model="block203" ng-click="block203=!block203"></button>
 
-> Why would you ever need anonymous functions?
-> Anonymous functions can be very useful
-> when we have functions that take other functions.
-> Such as `map` or `reduce`, which we learned in Functions section.
-> Let's look at usage examples of anonymous functions:
+> Mihin ikinä voisit tarvita nimettömiä funktioita?
+> Anonyymit funktiot voivat olla varsin hyödyllisiä,
+> kun käsittelemme funktioita, jotka ottavat toisia funktioita parametreinaan.
+> Esimerkiksi. `map` tai `reduce`, joihin tutustuimme aiemmin.
+> Katsotaanpa käytännön esimerkkejä anonyymeistä funktioista:
 {: ng-show="block203" .description}
 
 ```clojure
