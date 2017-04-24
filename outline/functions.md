@@ -107,7 +107,7 @@ Funktiot
 1. Kirjoita funktio
   * Avaa `walk.clj`
   * Kirjoita `forward-right` funktio (alla) 
-  * (Optio) Save `walk.clj`
+  * Tallenna (Save) `walk.clj`
   * Maalaa kokonaan `forward-right` funktio ja klikkaa Eval Selection-painiketta
 2. Käytä funktiota
   * Kirjoita `(forward-right :trinity)` REPLiin
@@ -127,11 +127,11 @@ Funktiot
 {: .slide_title .slide}
 
 * Avaa `walk.clj`
-* Kirjoita `forward-right-with-len-ang` funktio joka käyttää kolmea
-  argumenttia, kilpikonna, len (matka), ja angle (kulma) (jatkoa `forward-right-with-len` funktiolle)
+* Kirjoita `forward-right-with-len-ang` funktio, joka käyttää kolmea
+  parametria, kilpikonna, len (matka), ja angle (kulma) (jatkoa `forward-right-with-len` funktiolle)
 * Maalaa `forward-right-with-len-ang` funktio ja paina "reload section" painiketta.
 * REPL:ssä kirjoita `(forward-right-with-len-ang :trinity 60 120)`
-* Toista REPL:ssä konta kertaa
+* Toista REPL:ssä monta kertaa
 </section>
 
 
