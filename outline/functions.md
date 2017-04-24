@@ -168,7 +168,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### [Bonusosio]
 
-### Funktiot joiden parametrina on toinen funktio
+### Funktiot, joiden parametrina on toinen funktio
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
@@ -189,11 +189,12 @@ Funktiot
 
 #### <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
-> `map` is a function that takes another function, along with a
-> collection. It calls the function provided to it on each member of
-> the collection, then returns a new collection with the results of
-> those function calls. This is a weird concept, but it is at the core
-> of Clojure and functional programming in general.
+> `map` on funktio, joka ottaa toisen funktion sekä tietorakenteen.
+> Se kutsuu annettua funktioita tietorakenteen jokaiselle jäsenelle
+> ja palauttaa sitten uuden tietorakenteen, 
+> joka sisältää em. funktiokutsujen tulokset.
+> Tämä on jännä konsepti, mutta se on tärkeä osa Clojuren ja 
+> funktio-ohjelmoinnin peruskäsitteistöä.
 {: ng-show="block101" .description}
 
 ```clojure
