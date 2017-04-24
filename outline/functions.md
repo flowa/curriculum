@@ -72,7 +72,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### Kuinka käyttää `forward-right` funktiota <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
-> Funktiota `forward-right`, käytetään *kutsumalla* (call) sitä, aivan kuten olemme tehneet kaikkien muidenkin funktioiden kanssa tähän asti, joita olemme käyttäneet.
+> Funktiota `forward-right`, käytetään *kutsumalla* (call) sitä, aivan kuten olemme tehneet kaikkien muidenkin käyttämiemme funktioiden kanssa tähän asti.
 {: ng-show="block31" .description}
 
 ```clojure
@@ -84,9 +84,8 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### Funktio jolla on useita argumentteja <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
-> Functions can also take more than one argument. Let's make a
-> `forward-right-with-len` function that takes a forward length, in addition
-> to the turtle.
+> Funktiot voivat ottaa myös useamman kuin yhden parametrin. Let's make a
+> Luodaan `forward-right-with-len` funktio, joka ottaa eteenpäin kuljettavan matkan (len) kilpikonnan nimen (turtle) lisäksi
 {: ng-show="block41" .description}
 
 ```clojure
