@@ -345,9 +345,10 @@ Funktiot
 <button class="link" ng-bind-html="details3" ng-model="block313" ng-click="block313=!block313"></button>
 <button class="link" ng-bind-html="exercise" ng-model="block314" ng-click="block314=!block314"></button>
 
-> This is the most complicated function we've seen so far, so let's go
-> through each step. First, we have the name of the function, the
-> documentation string, and the arguments, just as in other functions
+> Tämä on monimutkaisin funktio, jonka olemme tähän mennessä nähneet. 
+> Käydään se läpi kohta kohdalta.
+> Ihan ensimmäiseksi meillä on funktion nimi, dokumentaatiomerkkijono ja parametrit,
+> ihan kuten muissakin funktioissa
 {: ng-show="block311" .description}
 
 > Next, we see `let`. `let` takes a vector of alternating names and
