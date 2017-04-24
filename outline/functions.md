@@ -84,7 +84,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### Funktio jolla on useita argumentteja <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
-> Funktiot voivat ottaa myös useamman kuin yhden parametrin. Let's make a
+> Funktiot voivat ottaa myös useamman kuin yhden parametrin.
 > Luodaan `forward-right-with-len` funktio, joka ottaa eteenpäin kuljettavan matkan (len) kilpikonnan nimen (turtle) lisäksi
 {: ng-show="block41" .description}
 
@@ -141,31 +141,22 @@ Funktiot
 
 #### Nimet ovat symboleita <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> Function names are symbols, just like the symbols we used with `def`
-> when assigning names to values.
+> Funktioiden nimet ovat symboleita, aivan kuten symbolit joita käytimme `def`:n kanssa,
+> kun asetimme nimille arvoja.
 {: ng-show="block61" .description}
 
-> Symbols have to begin with a non-numeric character, and they can
-> contain alphanumeric characters, along with *, +, !, -, _, and curriculum outline?.
-> This flexibility is important with functions, as there are certain
-> idioms we use.
+> Symboleiden tulee alkaa ei-numeerisella merkillä ja ne voivat sisältää kirjaimia ja numeroita 
+> sekä seuraavia merkkejä: * + ! - _ ?
+> Tämä on tärkeää, koska funktioiden nimeämiseen liittyy tiettyjä käytänteitä, joissa 
+> näitä merkkejä tarvitaan.
 {: ng-show="block61" .description}
 
-#### Two types of functions (POIS TÄMÄ KOKONAAN?)<button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
+##### Predikaattiofunktiot <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
 
-> Clojure has two type of functions:
-> 1. function that returns a value,
-> 2. function that returns true or false.
-> The second type is called *predicate*s.
-{: ng-show="block62" .description}
-
-
-##### Predicate function examples <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
-
-> In Clojure, `=` is a predicate function, which may be a surprising
-> fact. Other than that, like many other computer languages,
-> Clojure has predicate functions to test greater than, less than or such.
-> Mostly predicate functions end with `?`.
+> Clojuressa, `=` on ns. *predikaattifunktio*. Tämä saattaa hieman yllättää. 
+> Sen lisäksi Clojuressa, kuten monessa muussakin kielessä on predikaattifunktioita, joilla voi 
+> kokeilla onko arvo suurempi tai pienempi kuin jokin toinen arvo.
+> Yleensä predikaattifunktiot päättyvät kysymysmerkkiin eli `?`.
 {: ng-show="block63" .description}
 
 > * `=`, `not=`
