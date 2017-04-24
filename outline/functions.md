@@ -21,10 +21,10 @@ Funktiot
 
 * Mitä funktiot ovat?
 * Funktioiden nimeäminen
-* [bonus section] Funktiot jotka ottavat argumentteina muita funktioita
+* [bonusosio] Funktiot jotka ottavat argumentteina muita funktioita
     - `map` ja `reduce`
-* [bonus section] anonyymi funktio
-* [bonus section] Sijoitus: `let`
+* [bonusosio] anonyymi funktio
+* [bonusosio] Sijoitus: `let`
 </section>
 
 <section ng-controller="NarrativeController">
@@ -33,14 +33,13 @@ Funktiot
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> You have already seen some functions, such as `count`, `conj`,
-> `first`, and `rest`. All the arithmetic we did used functions, as
-> well: `+`, `-`, `*`, and `/`. What does it mean to be a function,
-> though?
+> Olet nähnyt joitain funktioita kuten `count`, `conj`,
+> `first`, ja `rest`. Aiemmin tehdy laskuissa käytettiin myös funktioita: `+`, `-`, `*`, ja `/`. 
+> Mitä se funktio nyt sitten tarkoittaa?
 {: ng-show="block11" .description}
 
-> A *function* is an independent, discrete piece of code that takes in
-> some values (called *arguments*) and returns a value.
+> *Funktio* on itsenäinen pätkä koodia, joka ottaa sisäänsä 
+> joitain arvoja (näitä kutstuaan nimellä *parametrit* toisinaan myös *argumentit*) ja palauttaa arvon.
 {: ng-show="block11" .description}
 
 > Reference: [Basics of Function](http://clojurebridge.github.io/community-docs/docs/clojure/function-creation/)
@@ -48,11 +47,11 @@ Funktiot
 
 * `count`, `conj`, `first`
 * `+`, `-`, `*`, `/`
-* A piece of code that takes values and returns a value
+* Pala koodia, joka ottaa vastaan arvoja ja palauttaa arvon
 </section>
 
 <section ng-controller="NarrativeController">
-#### Esimerkki funktio <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
+#### Esimerkkifunktio <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
 > * `defn` specifies that we are defining a function.
 > * `forward-right` is the *name* of this function.
