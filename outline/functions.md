@@ -47,17 +47,18 @@ Funktiot
 
 * `count`, `conj`, `first`
 * `+`, `-`, `*`, `/`
-* Pala koodia, joka ottaa vastaan arvoja ja palauttaa arvon
+* Pätkä koodia, joka ottaa vastaan arvoja ja palauttaa arvon
 </section>
 
 <section ng-controller="NarrativeController">
 #### Esimerkkifunktio <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> * `defn` specifies that we are defining a function.
-> * `forward-right` is the *name* of this function.
-> * The string on the next line is the documentation for the function, which explains what the function does. This is optional.
-> * `[turtle]` is the list of *arguments*. Here, we have one argument called `turtle`.
-> * `(forward turtle 60) (right turtle 135)` is the *body* of the function. This is what executes when we use the function.
+> * `defn` kertoo, että olemme määrittämässä funktiota.
+> * `forward-right` on tämän funktion *nimi*.
+> * Seuraavalla rivillä oleva merkkijono on funktion dokumentaatio, joka kertoo mitä funktio tekee. Dokumentaatio ei ole pakollinen.
+
+> * `[turtle]` on lista *parametreja*. Tässä, meillä on yksi parametri nimeltä `turtle`.
+> * `(forward turtle 60) (right turtle 135)` on funktion *runko* (body). Tämä osa suoritetaan kun kutsumme funktiota.
 {: ng-show="block21" .description}
 
 ```clojure
