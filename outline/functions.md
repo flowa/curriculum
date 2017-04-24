@@ -361,9 +361,9 @@ Funktiot
 > `t1` ja `t2` ovat määriteltyjä (=näkyvät) vain `let`in sisällä.
 {: ng-show="block313" .description}
 
-> Go to `walk.clj` and write `opposite` function.
-> Then, evaluate `opposite` function at the last line of the function definition.
-> Also, evaluate usage example of `opposite` function.
+> Avaa `walk.clj` ja kirjoita funktio nimeltä `opposite` (vastakohta).
+> Sen jälkeen, "evaluoi" `opposite` funktio.
+> Evaluoi myös `opposite` funktion käyttöesimerkki.
 {: ng-show="block314" .description}
 
 ```clojure
