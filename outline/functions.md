@@ -190,7 +190,7 @@ Funktiot
 #### <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 > `map` on funktio, joka ottaa toisen funktion sekä tietorakenteen.
-> Se kutsuu annettua funktioita tietorakenteen jokaiselle jäsenelle
+> Se kutsuu annettua funktiota tietorakenteen jokaiselle jäsenelle
 > ja palauttaa sitten uuden tietorakenteen, 
 > joka sisältää em. funktiokutsujen tulokset.
 > Tämä on jännä konsepti, mutta se on tärkeä osa Clojuren ja 
@@ -211,16 +211,16 @@ Funktiot
 
 #### <button class="link" ng-bind-html="details" ng-model="block111" ng-click="block111=!block111"></button>
 
-> Let's look at another function that takes a function. This one is
-> `reduce`, and it is used to turn collections into a single value.
+> Katsotaanpa toista funktiota, joka ottaa parametrinaan funktion. 
+> Sen nimi on `reduce` ja sitä käytetään muuttamaan kaikki tietorakenteen arvot yhdeksi arvoksi.
 {: ng-show="block111" .description}
 
-> `reduce` takes the first two members of the provided collection and
-> calls the provided function with those members. Next, it calls the
-> provided function again--this time, using the result of the previous
-> function call, along with the next member of the collection.
-> `reduce` does this over and over again until it finally reaches the
-> end of the collection.
+> `reduce` ottaa annetun tietorakenteen kaksi ensimmäistä jäsentä ja kutsuu
+> annettua funktiota niille (eli antaa jäsenet parametrina funktiolle). 
+> Seuraavaksi se kutsuu annettua funktiota uudestaan, tällä kertaa käyttäen edellisen kutsun 
+> tulosta ja tietorakenteen seuraavaa jäsentä.
+> `reduce` toistaa tätä uudelleen ja uudelleen kunnes tietorakenteessa ei ole enää jäseniä jäljellä.
+> Ts. niin kauan, että tietorakenne on käyty läpi.
 {: ng-show="block111" .description}
 
 ```clojure
