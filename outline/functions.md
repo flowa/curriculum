@@ -56,7 +56,6 @@ Funktiot
 > * `defn` kertoo, että olemme määrittämässä funktiota.
 > * `forward-right` on tämän funktion *nimi*.
 > * Seuraavalla rivillä oleva merkkijono on funktion dokumentaatio, joka kertoo mitä funktio tekee. Dokumentaatio ei ole pakollinen.
-
 > * `[turtle]` on lista *parametreja*. Tässä, meillä on yksi parametri nimeltä `turtle`.
 > * `(forward turtle 60) (right turtle 135)` on funktion *runko* (body). Tämä osa suoritetaan kun kutsumme funktiota.
 {: ng-show="block21" .description}
@@ -73,7 +72,7 @@ Funktiot
 <section ng-controller="NarrativeController">
 #### Kuinka käyttää `forward-right` funktiota <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
-> To use `forward-right`, we *call* the function, just like we've done with all the functions we've already used.
+> Funktiota `forward-right`, käytetään *kutsumalla* (call) sitä, aivan kuten olemme tehneet kaikkien muidenkin funktioiden kanssa tähän asti, joita olemme käyttäneet.
 {: ng-show="block31" .description}
 
 ```clojure
