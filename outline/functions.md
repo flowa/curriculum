@@ -322,11 +322,11 @@ Funktiot
 
 #### <button class="link" ng-bind-html="details" ng-model="block305" ng-click="block305=!block305"></button>
 
-> We can assign a name to value using `let` like `def`.
-> When a name is assigned to a value, the name is called a *symbol*.
+> Voimme antaa arvolle nimen käyttäen `let`-komentoa samaan tapaan kuin `def`:lläkin.
+> Kun nimi on asetettu arvolle, nimeä kutsutaan *symboliksi*
 {: ng-show="block305" .description}
 
-> Reference: [Assignment let](http://clojurebridge.github.io/community-docs/docs/clojure/let/)
+> Viite: [Assignment let](http://clojurebridge.github.io/community-docs/docs/clojure/let/)
 {: ng-show="block305" .description}
 
 ```clojure
