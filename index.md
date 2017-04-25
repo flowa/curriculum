@@ -32,18 +32,9 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 * [Yksinkertaiset arvot](outline/simple_values.html)
 * [Tietorakenteet](outline/data_structures.html)
 * [Funktiot](outline/functions.html)
-* [Ensimmäinen Quill-ohjelma](https://github.com/flowa/drawing/blob/master/curriculum/first-program.md)
+* [Ensimmäinen ohjelma: piirretään viivoja Quil-kirjastolla](https://github.com/flowa/drawing/blob/master/curriculum/first-program.md)
 * [Suorituksenhallinta ja logiikka](outline/flow_control.html)
 * [[bonus] Sekvenssit](outline/sequences.html)
 
-* Choices of Capstone App - Part. 2
-
-    - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (more function study)
-
-    - [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animation)
-
-    - [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (making sounds)
-    - [Global Growth](https://github.com/ClojureBridge/global-growth)  (web app with REST api)
-    - [Caesar Cipher](http://clojurebridge.github.io/community-docs/docs/exercises/caesar-cipher/)
-          (mini exercise of Strings and Characters)
+* [Toinen ohjelma: Kävelytetään kilpikonnaa](https://github.com/flowa/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (more function study)
 </section>
