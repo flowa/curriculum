@@ -170,11 +170,11 @@ Clojure intro
 
 #### <button class="link" ng-model="block51" ng-click="block51=!block51">Intro</button>
 
-> "REPL" stands for "Read-Eval-Print-Loop," which still doesn't make a
-> ton of sense without context. Many programming languages, including
-> Clojure, have a way to execute code interactively so you get instant
-> feedback. In other words, the code is read, then it is evaluated,
-> then the result is printed, and you begin again--thus, a loop.
+> "REPL" on lyhenne sanoista "Read-Eval-Print-Loop", mikä ei äkkiseltään
+> tarkoita juuri mitään. Monissa ohjelmointikielissä on mahdollista ajaa
+> komentoja interaktiivisesti, jotta saadaan välitöntä palautetta.
+> Koodia siis luetaan, sitten se evaluoidaan ja tulos näytetään ruudulla.
+> ja alusta uudelleen :)
 {: ng-show="block51" .description}
 
 **R**ead, **E**val, **P**rint, **L**oop
@@ -190,8 +190,8 @@ Clojure intro
 
 #### Nightcode InstaREPL <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> To interact with Clojure, we can use InstaREPL feature of Nightcode.
-> It's a nice way to play with Clojure interactively.
+> Leikkiäksemme hieman Clojurella, voimme käyttää Nightcoden InstaREPL 
+> ominaisuutta.
 {: ng-show="block61" .description}
 
 
