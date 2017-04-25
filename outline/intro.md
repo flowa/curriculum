@@ -50,8 +50,8 @@ Clojure intro
 
 #### Clojure on  _yleiskäyttöinen_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
-> Joillain kielillä on hyvin spesifinen tarkoitus. Kuten Javascript
-> kieli oli aikoinaan tarkoitettu vain selain applikaatioiden ja verkkosivujen
+> Joillain kielillä on hyvin erityinen tarkoitus. Kuten Javascript-
+> kieli oli aikoinaan tarkoitettu vain selainsovellusten ja verkkosivujen
 > kehittämiseen (joskin tämä ei enää aivan pidä paikkaansa). Objective-C on
 > pääasiassa tarkoitettu iPhone kehittämiseen jne. Tänään me lähinnä piirrämme
 > Clojurella, mutta Clojurea voi käyttää monenlaiseen tekemiseen.
@@ -76,15 +76,15 @@ Clojure intro
 
 #### Tiedon käsittelyssä <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> Clojure on hyvä tiedon käsittelyssä. Clojuressa on hyviä valmiita tietorakenteita.
-> Clojure on hyvä datan esittelyssä ja siinä on sisäänrakennettuna monia ominaisuuksia
-> jotka helpottavat tätä.
+> Clojure on hyvä tiedon käsittelyssä. Clojuressa on hyviä valmiita tietorakenteita ja
+> siinä on sisäänrakennettuna monia ominaisuuksia jotka helpottavat erilaisen datan kanssa
+> toimimista.
 {: ng-show="block22" .description}
 
 #### Samanaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
 > Samanaikaiset tapahtumat ovat usein vaikeita ohjelmointiteknisesti, vaikka
-> me ihmiset olemme suhteellisen hyviä synkronisoimaan toimintamme.
+> me ihmiset olemme suhteellisen hyviä toimimaan yhtäaikaisesti.
 > Clojuressa yhtäaikaisuus ei ehkä ole edelleenkään helppoa, mutta kieli sisältää
 > ominaisuuksia jotka helpottavat ja yksinkertaistavat tätä rutkasti.
 {: ng-show="block23" .description}
@@ -92,7 +92,7 @@ Clojure intro
 #### Kaikessa! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
 
 > Clojurella on myös hauskaa piirtää
-> [Quilla](https://github.com/quil/quil). 
+> [Quill-kirjastolla](https://github.com/quil/quil). 
 > Tätä teemmekin tänään yhdessä :)
 {: ng-show="block24" .description}
 </section>
@@ -122,7 +122,7 @@ Clojure intro
 > Clojuressa funktiot palauttavat aina arvon.
 {: ng-show="block32" .description}
 
-#### Parametri <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
+#### Parametrit <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
 > Monet funktiot ottavat parametreja. Parametreja voidaan käyttää
 > funktion sisällä, esimerkiksi
@@ -132,7 +132,7 @@ Clojure intro
 </section>
 
 <section ng-controller="NarrativeController">
-### Koodi kommentit
+### Koodikommentit
 
 <button class="link" ng-bind-html="details1" ng-model="block41" ng-click="block41=!block41"></button>
 <button class="link" ng-bind-html="details2" ng-model="block42" ng-click="block42=!block42"></button>
