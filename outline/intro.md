@@ -61,11 +61,8 @@ Clojure intro
 {: ng-show="block13" .description}
 
 #### Clojure on _hauskaa!_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
-
-> Clojure is _fun_. That's a matter of opinion, of course, but we
-> think it holds true. I hope that during this course you experience
-> the joy of seeing a Clojure program come together and do something
-> powerful and surprising.
+> Clojure on _hauskaa_. Tämä on toki vain meidän mielipiteemme!
+> Toivottavasti tänään huomaat saman!
 {: ng-show="block14" .description}
 </section>
 
@@ -75,35 +72,34 @@ Clojure intro
 
 #### <button class="link" ng-model="block21" ng-click="block21=!block21">Intro</button>
 
-> So, we said Clojure is all-purpose, and it is. That doesn't mean it
-> doesn't have strong suits, though.
+> Vaikka Clojure onkin yleiskäyttöinen ohjelmointikieli, sillä on omat erityisen
+> hyvät piirteensä.
+
 {: ng-show="block21" .description}
 
 #### Tiedon käsittelyssä <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> Clojure is known for being good at data processing. That's because
-> it has a good set of data structures--that is, it has several
-> built-in ways to represent data that are easy to use and powerful.
+> Clojure on hyvä tiedon käsittelyssä. Clojuressa on hyviä valmiita tietorakenteita.
+> Clojure on hyvä datan esittelyssä ja siinä on sisäänrakennettuna monia ominaisuuksia
+> jotka helpottavat tätä.
+
 {: ng-show="block22" .description}
 
 #### Samanaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
-> Clojure is known for its concurrency. Think about writing
-> instructions for four of your friends about how to assemble a
-> treehouse, but instead of writing them so one step is done at a
-> time, each of your friends does part of the job. Then, they
-> coordinate at the right time to assemble those parts into bigger
-> parts, and they do this over and over again until the end, when it
-> all comes together. Those instructions would be really complicated
-> and hard to write--and probably hard to read, too. Clojure gives us
-> some easy ways to write these sorts of instructions for computers.
+> Samanaikaiset tapahtumat ovat usein vaikeita ohjelmointiteknisesti, vaikka
+> me ihmiset olemme suhteellisen hyviä synkronisoimaan toimintamme.
+> Clojuressa yhtäaikaisuus ei ehkä ole edelleenkään helppoa, mutta kieli sisältää
+> ominaisuuksia jotka helpottavat ja yksinkertaistavat tätä rutkasti.
+
 {: ng-show="block23" .description}
 
 #### Kaikessa! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
 
-> Clojure also works well for building drawing applications with
-> [Quil](https://github.com/quil/quil), which is what we're going to
-> do together.
+> Clojurella on myös hauskaa piirtää
+> [Quilla](https://github.com/quil/quil). 
+> Tätä teemmekin tänään yhdessä :)
+
 {: ng-show="block24" .description}
 </section>
 
