@@ -70,12 +70,12 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 ### Funktioita sekvensseille
 <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> Clojure is very good at *iterate* over a sequence.
-> There are many functions that interact on sequences.
-> For example, `doseq`, `dotimes`, `for`, `loop`, `doall`, or `dorun`.
+> Clojure on erittäin hyvä käymään läpi (iterate) sekvenssejä.
+> Sekvenssien läpikäyntiin on olemassa paljon näppäriä funktioita.
+> Esimerkiksi, `doseq`, `dotimes`, `for`, `loop`, `doall`, tai `dorun`.
 >
-> We already saw `map` and `reduce` functions in "Functions that takes
-> other functions" section. These are also functions for sequences.
+> Näimme jo `map` ja `reduce` funktiot kohdassa, jossa käsiteltiin funktioita ottavia funktioita.
+> Myös nämä funktiot käsittelevät sekvenssejä.
 {: ng-show="block21" .description}
 </section>
 
