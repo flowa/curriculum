@@ -108,7 +108,7 @@ Funktiot
   * Avaa `walk.clj`
   * Kirjoita `forward-right` funktio (alla) 
   * Tallenna (Save) `walk.clj`
-  * Maalaa kokonaan `forward-right` funktio ja klikkaa Eval Selection-painiketta
+  * Maalaa kokonaan `forward-right` funktio ja klikkaa Reload Selection-painiketta
 2. Käytä funktiota
   * Kirjoita `(forward-right :trinity)` REPLiin
   * Toista tämä ainakin 8 kertaa (paina ylänuolta ja sen jälkeen enteriä)
