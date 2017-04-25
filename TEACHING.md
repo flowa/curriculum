@@ -141,7 +141,7 @@ TODO: add tips under each heading.
 Supporting Materials
 --------------------
 * [Student cheatsheet](outline/cheatsheet.md) | [PDF](ClojurebridgeCheatsheet-v2.pdf)
-* [Slides](http://clojurebridge.github.io/curriculum)
+* [Slides](https://flowa.github.io/curriculum)
 
 
 Other Curricula
