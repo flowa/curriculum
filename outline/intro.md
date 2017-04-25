@@ -137,20 +137,14 @@ Clojure intro
 <button class="link" ng-bind-html="details1" ng-model="block41" ng-click="block41=!block41"></button>
 <button class="link" ng-bind-html="details2" ng-model="block42" ng-click="block42=!block42"></button>
 
-> When we write code, we try to make it as clear as possible. Doing so
-> is a huge advantage because our code gets read by others (oftentimes
-> more so than by us!), or we come back to our own code to read it
-> later, by which point we may have forgotten each exact detail of the
-> code. One way that we can clarify our code is annotating it with
-> comments. Comments are notes that we add to code, for our own sake,
-> that the computer ignores.
+> Haluamme että kirjoittamamme koodi on selkeää, sillä sitä luetaan
+> paaaaljon useammin kuin kirjoitetaan. On helppo unohtaa, mitä tietty
+> kohta koodissa itseasiassa tekeekään. Siksi me haluamme kirjoittaa
+> vapaamuotoisia kommentteja, jotka selittävät koodin tarkoituksen.
 {: ng-show="block41" .description}
 
-> In Clojure, comments can be started with a semicolon. Everything
-> after a semicolon until the end of that line is a comment that gets
-> ignored by the computer. Only one semicolon is necessary, but
-> sometimes you see two semicolons in a row, depending on stylistic
-> tastes.
+> Clojuressa koodirivit alkavat puolipisteellä ;. Tietokone jättää huomiotta
+> kaikki puolipisteen jälkeiset merkit.
 {: ng-show="block42" .description}
 
 > Reference: [Comment](http://clojurebridge.github.io/community-docs/docs/clojure/comment/)
@@ -196,32 +190,33 @@ Clojure intro
 
 #### REPL:n käyttö <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
-> Nightcode has a project setting aware REPL on a bottom pane.
->  When "Run with REPL" button gets clicked, this REPL starts.
+> Nightcoden REPL tietää tilanteen jossa sitä käytetään.
+> kun "Run with REPL" painiketta painetaa, REPL käynnistyy.
 {: ng-show="block62" .description}
 
-> Alternatively, we can start REPL using leiningen on a terminal (without Nightcode).
-> On a terminal, type `lein repl`, then, REPL starts.
-> If we hit `lein repl` command within the project directory (folder), it sees the project setting.
+> REPL:n voi käynnistää myös leiningein kautta terminaalissa
+> kirjoittamalla `lein repl`.
+> Mikäli tämä kirjoitetaan projektin hakemistossa, REPL näkee projektin
+> asetukset automaattisesti.
 {: ng-show="block62" .description}
 
 
 #### Evaluoi ohjelma tai rivi <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
 
 <!-- TODO project_name should probably be defined somewhere, right? -->
-> Nightcode also lets us evaluate an entire file (program) or line(s).
-> On Nightcode, after REPL has started, "Realod File" and "Reload Selection" works.
+> Nightcodessa voidaan evaluoida kokonainen ohjelma tai pelkästään valitut rivit.
+> Kun REPL on käynnistetty, "Reload File" ja "Reload Selection" painikkeet toimivat.
 {: ng-show="block63" .description}
 </section>
 
 <section>
-#### EXERCISE 1: Try Nightcode InstaREPL
+#### HARJOITUS 1: Kokeile Nightcoden InstREPL:iä
 
-1. Start Nightcode
-2. Import `myproject` <br/> (which you created while testing leiningen setup)
-3. Open `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
-4. Click __InstREPL__ button
-5. Type the Clojure functions below and see what happens
+1. Käynnistä Nightcode
+2. Importtaa `myproject` <br/> (jonka loit aiemmin)
+3. Avaa `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
+4. Klikkaa __InstREPL__ painiketta
+5. Kirjoita tekstieditoriin seuraavat rivit, ja katso mitä tapahtuu
 
 ```clojure
 (print-str "Hello, World!")
@@ -230,41 +225,42 @@ Clojure intro
 (- 3 4)
 (* 3 4)
 ```
-> Make sure you type the lines <em>exactly</em> as you see them above,
-> taking care to put the parentheses in the right locations.
+> Pidä huolta että kirjoitat rivit täsmälleen yllä kuvatusti.
+> Kiinnitä erityisesti huomiota sulkeisiin.
 </section>
 
 <section>
-#### EXERCISE 2: Evaluate file and line - Part 1
+#### HARJOITUS 2: Evaluoi tiedosto ja valitut osat - Osa 1
 
-* Open the file `welcometoclojurebridge/src/clojurebridge_turtle/walk.clj`
-* Evaluate the entire file by hitting "Run with REPL" followed by "Reload File"
-* See what happens
-* Type `(forward 40)` on the bottom line of `walk.clj` in the editor. Evaluate this line by selecting line and hitting "Reload Selection"
-* See what happens
+* Avaa tiedosto `welcometoclojurebridge/src/clojurebridge_turtle/walk.clj`
+* Evaluoi koko tiedosto painamalla "Run with REPL" ja sitten "Reload File"
+* Katso mitä tapahtuu
+* kirjoita `(forward 40)`  `walk.clj` tiedoston viimeiseksi riviksi editorissa. Evaluoi tämä rivi maalaamalla se, ja
+  painamalla "Reload Selection"
+* Katso mitä tapahtuu
 
-(Continue on EXERCISE 3)
+(Jatka harjoitukseen 3)
 </section>
 
 <section>
-#### EXERCISE 3: Evaluate file and line - Part 2
+#### Harjoitus 3: Evaluoi tiedosto ja valitut osat - Osa 2
 
-(Suppose EXERCISE 2 is done)
+(Olethan tehnyt harjoituksen 2)
 
-* Type `(right 90)` and "enter" in the REPL pane (bottom) ![Run with REPL pane](img/run-with-repl.png)
-* See what happens to the turtle
-* Take a look [Turtles App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) and
+* Kirjoita REPL:iin (alhaalla) `(right 90)` ja paina "enter" ![Run with REPL pane](img/run-with-repl.png)
+* Katso mitä kilpikonna tekee
+* Katso [Turtles App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) ja
 [How To Walk Turtles](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
-[section 1 and 2], and try more commands to walk your turtle
+[section 1 and 2], ja kokeile lisää kilpikonnien komentoja.
 </section>
 
 <section>
-#### EXERCISE 4: Look at Clojure docs
+#### Harjoitus 4: Clojure dokumentaation selaaminen
 
-* In the bottom REPL pane, try to look up the documentation for a function you have used
-* You can use the `(doc function-name)` command to do this
-* Try `(doc +)` and `(doc forward)` on the REPL
-* Try other functions we used so far, for example, `-`, `*`, or `doc`
+* REPL:ssä voi lukea Clojure funktioiden dokumentaatiota
+* Käytä `(doc function-name)` komentoa
+* Kirjoita REPL:iin `(doc +)` ja `(doc forward)`
+* Kokeile selata myös muiden funktioiden dokumentaatiota, kuten: , `-`, `*`, or `doc`
 </section>
 
 {% comment %}
