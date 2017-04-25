@@ -38,7 +38,6 @@ Clojure intro
 > Miksi opetamme Clojurea? Se ei ole yhtä suosittu kuin monet muut kielet.
 > Mutta Clojuressa on kolme ominaisuutta jotka tekevät siitä mahtavan
 > kielen ensimmäiseksi ohjelmointikieleksi.
-
 {: ng-show="block11" .description}
 
 #### Clojure on _yksinkertainen_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
@@ -57,7 +56,6 @@ Clojure intro
 > kehittämiseen (joskin tämä ei enää aivan pidä paikkaansa). Objective-C on
 > pääasiassa tarkoitettu iPhone kehittämiseen jne. Tänään me lähinnä piirrämme
 > Clojurella, mutta Clojurea voi käyttää monenlaiseen tekemiseen.
-
 {: ng-show="block13" .description}
 
 #### Clojure on _hauskaa!_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
@@ -75,7 +73,6 @@ Clojure intro
 
 > Vaikka Clojure onkin yleiskäyttöinen ohjelmointikieli, sillä on omat erityisen
 > hyvät piirteensä.
-
 {: ng-show="block21" .description}
 
 #### Tiedon käsittelyssä <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
@@ -83,7 +80,6 @@ Clojure intro
 > Clojure on hyvä tiedon käsittelyssä. Clojuressa on hyviä valmiita tietorakenteita.
 > Clojure on hyvä datan esittelyssä ja siinä on sisäänrakennettuna monia ominaisuuksia
 > jotka helpottavat tätä.
-
 {: ng-show="block22" .description}
 
 #### Samanaikaisuudessa <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
@@ -92,7 +88,6 @@ Clojure intro
 > me ihmiset olemme suhteellisen hyviä synkronisoimaan toimintamme.
 > Clojuressa yhtäaikaisuus ei ehkä ole edelleenkään helppoa, mutta kieli sisältää
 > ominaisuuksia jotka helpottavat ja yksinkertaistavat tätä rutkasti.
-
 {: ng-show="block23" .description}
 
 #### Kaikessa! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
@@ -100,7 +95,6 @@ Clojure intro
 > Clojurella on myös hauskaa piirtää
 > [Quilla](https://github.com/quil/quil). 
 > Tätä teemmekin tänään yhdessä :)
-
 {: ng-show="block24" .description}
 </section>
 
@@ -119,7 +113,6 @@ Clojure intro
 > Huomaat varmasti sulkeet. Sulkeiden sisällä on komentoja Clojure kielellä. Vasen sulku
 > aloittaa komennon, ja vastaava oikea sulku lopettaa sen. Clojure-koodissa on paljon
 > sisäkkäisiä sulkeita, eli sisäkkäisiä komentoja.
-
 {: ng-show="block31" .description}
 
 #### Funktiot <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
@@ -128,7 +121,6 @@ Clojure intro
 > Funktiot ovat Clojuren työhevosia. `print-str`, `+` ja `forward` 
 > ovat funktioita.
 > Clojuressa funktiot palauttavat aina arvon.
-
 {: ng-show="block32" .description}
 
 #### Parametri <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
@@ -137,7 +129,6 @@ Clojure intro
 > funktion sisällä, esimerkiksi
 > `print-str`:lle annetaan parametriksi "Hello World" ja se palautta merkkijonon.
 > `+`:lle annetaan 3 ja 4. Se laskee ne yhteen ja palauttaa 7.
-
 {: ng-show="block33" .description}
 </section>
 
