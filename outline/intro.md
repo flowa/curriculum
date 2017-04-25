@@ -31,34 +31,33 @@ Clojure intro
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> If you've never programmed before, you may not know that there are
-> many languages to choose from. Some of the other languages you might
-> have heard of (or will hear of!) are C, JavaScript, Python, and
-> Java.
+> Jos et ole koskaan ohjelmoinut et ehkä tiedä että on olemassa monia
+> ohjelmointikieliä. Kuten C, Javascript, Python ja Java
 {: ng-show="block11" .description}
 
-> So why are we teaching Clojure? Although it's not as popular as any
-> of those languages, we're using Clojure because of three qualities
-> it has that make it an ideal first language to learn--or a great
-> language to learn in addition to others you might already know:
+> Miksi opetamme Clojurea? Se ei ole yhtä suosittu kuin monet muut kielet.
+> Mutta Clojuressa on kolme ominaisuutta jotka tekevät siitä mahtavan
+> kielen ensimmäiseksi ohjelmointikieleksi.
+
 {: ng-show="block11" .description}
 
 #### Clojure on _yksinkertainen_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> Clojure is _simple_. That's not to say it's not powerful; it is. The
-> number of concepts you have to know to program in Clojure is very
-> small, however, and easy to grasp. Clojure grows with you as you
-> learn it, and you can be very productive with a small subset of the
-> language.
+> Clojure on _yksinkertainen_. Mutta voimakas. Clojuressa ei ole montaakaan
+> hallittavaa asiaa tai konseptia jotta voit aloittaa ohjelmoinnin. Ja ne eivät
+> ole kamalan vaikeita. Clojure opettaa sinua, siinä missä sinä opit Clojurea
+> ja huomaat, että tarvitset vain pientä osaa kielen ominaisuuksista hienojen asioiden
+> tekemiseksi.
 {: ng-show="block12" .description}
 
 #### Clojure on  _yleiskäyttöinen_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
-> Clojure is _all-purpose_. Some languages have a specific focus.
-> JavaScript, for example, was traditionally used only in web pages
-> (although that's changed somewhat). Objective-C is used mainly for
-> iPhone apps. We're going to make a drawing application today, but
-> you can use Clojure for any sort of application easily.
+> Joillain kielillä on hyvin spesifinen tarkoitus. Kuten Javascript
+> kieli oli aikoinaan tarkoitettu vain selain applikaatioiden ja verkkosivujen
+> kehittämiseen (joskin tämä ei enää aivan pidä paikkaansa). Objective-C on
+> pääasiassa tarkoitettu iPhone kehittämiseen jne. Tänään me lähinnä piirrämme
+> Clojurella, mutta Clojurea voi käyttää monenlaiseen tekemiseen.
+
 {: ng-show="block13" .description}
 
 #### Clojure on _hauskaa!_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
