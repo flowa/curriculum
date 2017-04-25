@@ -225,7 +225,7 @@ Clojure intro
 (- 3 4)
 (* 3 4)
 ```
-> Pidä huolta että kirjoitat rivit täsmälleen yllä kuvatusti.
+> Pidä huolta että kirjoitat rivit täsmälleen ylläkuvatusti.
 > Kiinnitä erityisesti huomiota sulkeisiin.
 </section>
 
