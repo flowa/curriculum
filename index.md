@@ -14,7 +14,7 @@ ClojureBridge
 </section>
 
  <section>
-## Table of Contents
+## Sisältö
 {: .slide_title .slide}
 
 {% comment %}
