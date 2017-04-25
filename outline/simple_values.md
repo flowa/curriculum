@@ -38,7 +38,7 @@ Yksinkertaiset arvot
 </section>
 
 <section ng-controller="NarrativeController">
-### Tekstijonot
+### Merkkijonot
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
@@ -89,7 +89,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-### Avainsanat
+### Avainsanat (Keyword)
 {: .slide_title .slide}
 
 #### <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
@@ -145,7 +145,7 @@ nil
 </section>
 
 <section ng-controller="NarrativeController">
-#### Suhde <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+#### Murtoluvut <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 > Finally, we have fractions, which are also called ratios. Computers
 > cannot perfectly represent all floats, but ratios are always exact.
@@ -162,7 +162,7 @@ nil
 </section>
 
 <section>
-### Aritmetiikka
+### Laskeminen
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block111" ng-click="block111=!block111">Intro</button>
@@ -238,7 +238,7 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 </section>
 
 <section ng-controller="NarrativeController">
-### Aritmetiikkaa eri tyyppisillä arvoilla
+### Laskemista eri tyyppisillä arvoilla
 
 <button class="link" ng-bind-html="details" ng-model="block141" ng-click="block141=!block141"></button>
 
