@@ -28,13 +28,13 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 
 {% endcomment %}
 
-* [Introduction to Programming with Clojure](outline/intro.html)
-* [Simple Values](outline/simple_values.html)
-* [Data Structures](outline/data_structures.html)
-* [Functions](outline/functions.html)
-* [Capstone App: Drawing Lines](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
-* [Flow Control and Logic](outline/flow_control.html)
-* [[bonus module] Sequences](outline/sequences.html)
+* [Clojure intro](outline/intro.html)
+* [Yksinkertaiset arvot](outline/simple_values.html)
+* [Tietorakenteet](outline/data_structures.html)
+* [Funktiot](outline/functions.html)
+* [Ensimmäinen Quill-ohjelma](https://github.com/flowa/drawing/blob/master/curriculum/first-program.md)
+* [Suorituksenhallinta ja logiikka](outline/flow_control.html)
+* [[bonus] Sekvenssit](outline/sequences.html)
 
 * Choices of Capstone App - Part. 2
 
