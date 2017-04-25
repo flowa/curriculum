@@ -42,11 +42,10 @@ Clojure intro
 
 #### Clojure on _yksinkertainen_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> Clojure on _yksinkertainen_. Mutta voimakas. Clojuressa ei ole montaakaan
-> hallittavaa asiaa tai konseptia jotta voit aloittaa ohjelmoinnin. Ja ne eivät
-> ole kamalan vaikeita. Clojure opettaa sinua, siinä missä sinä opit Clojurea
-> ja huomaat, että tarvitset vain pientä osaa kielen ominaisuuksista hienojen asioiden
-> tekemiseksi.
+> Clojure on _yksinkertainen_. Mutta tehokas. Clojuressa ei ole montaakaan
+> hallittavaa asiaa tai konseptia, jotta voit aloittaa ohjelmoinnin. Ja ne eivät
+> ole kamalan vaikeita. Huomaat, että tarvitset vain pientä osaa kielen
+> ominaisuuksista hienojen asioiden tekemiseksi.
 {: ng-show="block12" .description}
 
 #### Clojure on  _yleiskäyttöinen_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
