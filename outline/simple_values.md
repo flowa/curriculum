@@ -145,14 +145,11 @@ nil
 #### Murtoluvut <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 > Tietokone ei pysty esittämään kaikkia desimaalilukuja täydellisesti.
-> Murtoluvut sensijaan ovat aina tarkkoja.
-
-> Finally, we have fractions, which are also called ratios. Computers
-> cannot perfectly represent all floats, but ratios are always exact.
-> We write them with a slash, like so:
+> Murtoluvut sensijaan ovat aina tarkkoja. Murtoluvut esitetään
+> kauttaviivan avulla.
 {: ng-show="block101" .description}
 
-> Note that, just like with pen-and-paper math, the [denominator](http://en.wikipedia.org/wiki/Fraction_%28mathematics%29) of your ratio cannot be equal to `0`.
+> Huomaa, että kuten oikeassa maailmassakaan, nollalla ei saa jakaa.
 {: ng-show="block101" .description}
 
 ```clojure
@@ -167,9 +164,8 @@ nil
 
 #### <button class="link" ng-model="block111" ng-click="block111=!block111">Intro</button>
 
-> You can add, subtract, multiply, and divide numbers. In Clojure,
-> arithmetic looks a little different than it does when you write it
-> out with pen and paper. Look at these examples:
+> Numeroita voi lisätä, vähentää, kertoa ja jakaa. Clojuressa laskeminen
+> näyttää hieman erilaiselta kuin normaalisti. Katsotaanpa esimerkkejä:
 {: ng-show="block111" .description}
 
 ```clojure
@@ -187,16 +183,15 @@ nil
 <button class="link" ng-bind-html="details1" ng-model="block121" ng-click="block121=!block121"></button>
 <button class="link" ng-bind-html="details2" ng-model="block122" ng-click="block122=!block122"></button>
 
-> In Clojure, `+`, `-`, `*` and `/` appear before two numbers. This is
-> called _prefix notation_. What you're used to seeing is called
-> _infix notation_, as the arithmetic operator is in-between the two
-> operands.
+> Clojuressa operaattorit `+`, `-`, `*` ja `/` esiintyvät ennen numeroita.
+> Tämä on niin sanottu _prefix-notaatio_. Olet tottunut näkemään _infix-notaatio_ esitystavan,
+> jossa operaattori sijaitsee numeroiden välissä.
 {: ng-show="block121" .description}
 
-> Languages such as **JavaScript** use **infix** notation,
-> while **Clojure** only uses **prefix** notation.
-> Prefix notation is useful for many reasons. Look at this example of
-> an infix expression and the prefix equivalent:
+> Ohjelmointikielet kuten **JavaScript** käyttävät **infix** esitystapaa.
+> Clojure käyttää vain **prefix** esitystapaa.
+> Tämä on monintavoin hyödyllistä, katsotaanpa esimerkkejä.
+> Tässä sama asia kummallakin tavalla esitettynä.
 {: ng-show="block122" .description}
 
 ```clojure
@@ -211,11 +206,10 @@ Prefix: (+ (- (+ (+ 1 (/ (* 2 3) 4)) 5) (/ (* 6 7) 8)) 9)
 
 #### Eksplisiittinen arvojärjestys <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
 
-> Imagine both are unclear, but notice that in the prefix version,
-> you do not have to ever think about the precedence of operators.
-> Because each expression has the operator before all the operands and
-> the entire expression is wrapped in parentheses, all precendence is
-> explicit.
+> Molemmat ovat hieman epäselviä, mutta huomaathan että prefix-versiossa
+> ei tarvitse miettiä operaattoreiden arvojärjestystä. Jokaisessa
+> ilmauksessa operaattori on aina ennen operoitavia arvoja.
+> Koska ilmaus on sulkeiden sisällä, on arvojärjestys eksplisiittinen.
 {: ng-show="block131" .description}
 
 ```clojure
@@ -225,10 +219,10 @@ Prefix: (+ 1 (/ 2 3))
 
 #### Vähemmän toistoa <button class="link" ng-bind-html="details" ng-model="block132" ng-click="block132=!block132"></button>
 
-> Another reason prefix notation can be nice is that it can make long
-> expressions less repetitive.
-> With prefix notation, if we plan to use the same operator on many
-> operands, we do not have to repeat the operator between them.
+> Toinen hyvä syy käyttää prefix-esitystapaa on se, että se mahdollistaa toisteisuuden
+> vähentämisen. Prefix notaation avulla voidaan käytää yhtä operandia monen
+> operoitavan numeron käsittelemiseen, ilman että sitä tarvitsee toistaa 
+> numeroiden välillä.
 {: ng-show="block132" .description}
 
 ```clojure
@@ -242,9 +236,9 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 
 <button class="link" ng-bind-html="details" ng-model="block141" ng-click="block141=!block141"></button>
 
-> So far, we looked at arithmetic operations by integers only.
-> However, we can use floats or ratios for those operations as well.
-> See these examples:
+> Olemme tähän asti laskeneet pelkästään kokonaisluvuilla.
+> Muita tyyppejä kuten desimaaleja ja murtolukuja voidaan käyttää yhtälailla.
+> Esimerkiksi:
 {: ng-show="block141" .description}
 
 ```clojure
@@ -260,10 +254,9 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 
 #### <button class="link" ng-model="block161" ng-click="block161=!block161">Intro</button>
 
-> If we had to type the same values over and over, it would be very
-> hard to write a program. What we need are names for values, so we
-> can refer to them in a way we can remember. This is called
-> assignment. 
+> Ohjelmien kirjoittaminen olisi todella vaikeaa, jos meidän täytyisi
+> kirjoittaa samat arvot uudestaan ja uudestaan. Voimme asettaa arvoillemme
+> nimiä.
 {: ng-show="block161" .description}
 </section>
 
@@ -272,11 +265,11 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 
 #### <button class="link" ng-bind-html="details" ng-model="block171" ng-click="block171=!block171"></button>
 
-> We can assign a name to value using `def`.
-> When a name is assigned a value, that name is called a *symbol*.
+> `def`-komennolla voimme asettaa arvolle nimen.
+> kun arvolle asetetaan nimi, tätä nimeä kutsutaan *symboliksi*.
 {: ng-show="block171" .description}
 
-> Reference: [Assignment def](http://clojurebridge.github.io/community-docs/docs/clojure/def/)
+> Viite: [Assignment def](http://clojurebridge.github.io/community-docs/docs/clojure/def/)
 {: ng-show="block171" .description}
 
 ```clojure
@@ -290,8 +283,8 @@ Prefix: (+ 1 2 3 4 5 6 7 8 9)
 <section ng-controller="NarrativeController">
 #### Tulosten asettaminen symboleihin <button class="link" ng-bind-html="details" ng-model="block181" ng-click="block181=!block181"></button>
 
-> You can assign more than simple values to symbols. Try the following.
-> Look at the last line, and see how we can use symbols by themselves to refer to a value.
+> Symboleihin voi asettaa muutakin kuin yksinkertaisia arvoja. Katso seuraavaa:
+> Viimeisellä rivillä näät, kuinka symboli viittaa arvoon.
 {: ng-show="block181" .description}
 
 ```clojure
