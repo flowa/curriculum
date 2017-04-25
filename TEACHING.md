@@ -127,7 +127,7 @@ TODO: add tips under each heading.
   - 60 min
 * [Functions](outline/functions.md)
   - 45-60 min
-* [Capstone App 1](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
+* [Capstone App 1](https://github.com/flowa/drawing/blob/master/curriculum/first-program.md)
   - 60 min
 * [Flow Control](outline/flow_control.md)
   - 20 min
