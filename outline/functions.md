@@ -175,7 +175,7 @@ Funktiot
 
 > Osa kaikkein tehokkaimmista tietorakenteiden kanssa käytettävistä funktioista
 > ottavat toisia funktioita parametreinaan.
-> Tämä on yksi taianomaisimmista asioista Clojuressa - ja monessa muusakin ohjelmointikielessä.
+> Tämä on yksi taianomaisimmista asioista Clojuressa - ja monessa muussakin ohjelmointikielessä.
 > Ajatus voi tuntua ensialkuun monimutkaiselta eikä välttämättä aukene välittömästi.
 > Katsotaan esimerkki ja opitaan lisää aiheesta.
 {: ng-show="block71" .description}
