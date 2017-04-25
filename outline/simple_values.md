@@ -31,9 +31,9 @@ Yksinkertaiset arvot
 
 #### <button class="link" ng-model="block71" ng-click="block71=!block71">Intro</button>
 
-> In order to do anything in a programming language, you need to have
-> values to do stuff with. In Clojure, simple values are numbers,
-> strings, booleans, nil and keywords.
+> Tehdäksemme jotain, meillä täytyy olla arvoja joilla tehdä jotain.
+> Clojuren yksinkertaiset arvot ovat numerot, merkkijonot, totuusarvot,
+> nil ja avainsanat (keyword).
 {: ng-show="block71" .description}
 </section>
 
@@ -43,13 +43,14 @@ Yksinkertaiset arvot
 
 #### <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> What is a string? A string is just a piece of text. To make a
-> string, you enclose it in quotation marks.
-> Look at the last example. A backslash is how we put a quotation mark
-> inside a string. Do not try using single quotes to make a string.
+> Merkkijono on tekstiä. Merkkijono luodaan laittamalla merkkejä
+> lainausmerkkien sisään. Katso esimerkkiä:
+> Jotta saamme lainausmerkin merkkijonon sisään, täytyy meidän
+> laittaa kenoviiva ennen sitä.
+> Älä myöskään yritä tehdä merkkijonoa heittomerkeillä.
 {: ng-show="block21" .description}
 
-> Reference: [String](http://clojurebridge.github.io/community-docs/docs/clojure/string/)
+> Viite: [String](http://clojurebridge.github.io/community-docs/docs/clojure/string/)
 {: ng-show="block21" .description}
 
 ```clojure
@@ -65,19 +66,16 @@ Yksinkertaiset arvot
 
 #### <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
->A boolean is a true or false value, and you type them just like that,
->`true` and `false`. Often in programming, we need to ask a true or
->false question, like "Is this class in the current semester?" or "Is
->this person's birthday today?" When we ask those questions, we get a
->boolean back.
+> Totuusarvot ovat tosia tai epätosia. Ne esitetään kirjoittamalla
+> `true` ja `false`. Ohjelmoidessa joudutaan usein vastaamaan kysymykseen
+> onko joku asia totta vai ei. Vastaus näihin kysymyksiin on totuusarvo.
 {: ng-show="block31" .description}
 
-> There is another value `nil`, which behaves like a boolean in terms
-> of __truthiness__.
-> But, `nil` means no value at all and not a boolean
+> `nil` on erityinen arvo, joka toimii totuuksien suhteen, vertailuissa, kuten totuusarvo.
+> mutta `nil` tarkoittaa myös "ei arvoa lainkaan", joka ei ole totuusarvo.
 {: ng-show="block31" .description}
 
-> Reference: [Truthiness](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
+> Viite: [Truthiness](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
 {: ng-show="block31" .description}
 
 
@@ -94,12 +92,13 @@ nil
 
 #### <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
-> Keywords are the strangest of the basic value types. Some computer
-> languages have similar one. However, keywords don’t have a real
-> world analog like numbers, strings, or booleans.
-> You can think of them as a special type of string, one that’s used for
-> labels. They are often used as keys of key-value pair for maps (data
-> structure; will learn later).
+> Avainsanat ovat ehkä kummallisimpia perus arvojen tyypeistä. Joissain
+> ohjelmointikielissä on vastaavia arvoja joihin olet ehkä törmännyt.
+> Avainsanoilla ei ole vastinetta oikeassa maailmassa, kuten numeroilla,
+> merkkijonoilla tai totuusarvoilla.
+> Avainsanoja voi ajatella eräänlaisina merkkijonoilla, joita käytetään lähinnä
+> asioiden nimeämiseen. Erityisesti näitä käyteään avaimina taulukoissa (maps).
+> Näistä kerrotaan myöhemmin lisää.
 {: ng-show="block41" .description}
 
 
@@ -115,12 +114,11 @@ nil
 
 #### Kokonaisluvut <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
-> Clojure has several different types of numbers.
+> Clojuressa on eri tyyppisiä numeroita.
 {: ng-show="block81" .description}
 
-> First up are integers. Integers include zero, the positive whole
-> numbers, and the negative whole numbers, and you write them just
-> like we write them normally.
+> Kokonaisluvut sisältävät positiiviset ja negatiiviset kokonaisluvut,
+> mukaanlukien nollan. Ne kirjoitetaan normaalisti lukuina.
 {: ng-show="block81" .description}
 
 ```clojure
@@ -133,8 +131,7 @@ nil
 <section ng-controller="NarrativeController">
 #### Desimaaliluvut <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
 
-> Then we have decimal numbers, which are also called floats. They
-> include any numbers that have a decimal point in them.
+> Desimaalilukuja (myös "float") kuvataan myös melkonormaalisti, desimaalipisteen kanssa.
 {: ng-show="block91" .description}
 
 ```clojure
@@ -146,6 +143,9 @@ nil
 
 <section ng-controller="NarrativeController">
 #### Murtoluvut <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+
+> Tietokone ei pysty esittämään kaikkia desimaalilukuja täydellisesti.
+> Murtoluvut sensijaan ovat aina tarkkoja.
 
 > Finally, we have fractions, which are also called ratios. Computers
 > cannot perfectly represent all floats, but ratios are always exact.
