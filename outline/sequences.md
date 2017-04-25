@@ -29,14 +29,14 @@ Sekvenssit
 ### Mitä sekvenssit ovat?
 {: .slide_title .slide}
 
-#### Clojuren tietorakenteita <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
+#### Clojuren tietorakenteita <button class="link" ng-bind-html="lisätietoa" ng-model="block11" ng-click="block11=!block11"></button>
 
 > Clojuressa voidaan sanoa, että kaikki tietorakenteet ovat sekvenssejä.
 > Tähän asti olemme oppineet, että `vektori` ja `mapit` (avain-arvoparit) ovat sekvenssejä.
 > Myös merkkijono on sekvenssi. Mikä tahansa on Clojuressa sekvenssi, jos se on **sekvenssimäinen** (seq-able).
 {: ng-show="block11" .description}
 
-#### Sisältää ensimmäisen `first` tai sitten ei  <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Sisältää ensimmäisen `first` tai sitten ei  <button class="link" ng-bind-html="lisätietoa" ng-model="block12" ng-click="block12=!block12"></button>
 
 > Jos jokin on **sekvenssimäinen**, siitä saadaan ensimmäinen jäsen `first` funktion avulla.
 > Tämä on hyvä testi sille onko kyseessä sekvenssi vai ei.
@@ -48,19 +48,19 @@ Sekvenssit
 
 ```clojure
 (turtle-names)
-;=> [:trinity :neo :oracle :cypher] ; vector
+;=> [:trinity :neo :oracle :cypher] ; vektori
 (first (turtle-names))
-;=> :trinity                        ; the first item
+;=> :trinity                        ; ensimmäinen jäsen
 
 (:trinity (state))
 ;=> {:x 0, :y 0, :angle 90, :color [30 30 30]}  ; map
 (first (:trinity (state)))
-[:x 0]                                          ; the first item
+[:x 0]                                          ; ensimmäinen jäsen
 
-(first "Hello, World!")  ; string
-;=> \H                   ; the first item
+(first "Hello, World!")  ; merkkijono
+;=> \H                   ; ensimmäinen jäsen
 
-(first :trinity)         ; keyword is not seq-able
+(first :trinity)         ; keyword eli avainsana ei ole sekvenssimäinen
 ;=> IllegalArgumentException Don't know how to create ISeq from:
 clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 ```
