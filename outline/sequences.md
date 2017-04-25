@@ -26,20 +26,20 @@ Sekvenssit
 </section>
 
 <section ng-controller="NarrativeController">
-### What are sequences?
+### Mitä sekvenssit ovat?
 {: .slide_title .slide}
 
-#### Clojure's data structures <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
+#### Clojuren tietorakenteita <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
 
-> In Clojure, we can say every data structure is a sequence.
-> So far, we learned `vector` and `map`, both of which are sequence.
-> String is also a sequence. When something is **seq-able**, it is a sequence.
+> Clojuressa voidaan sanoa, että kaikki tietorakenteet ovat sekvenssejä.
+> Tähän asti olemme oppineet, että `vektori` ja `mapit` (avain-arvoparit) ovat sekvenssejä.
+> Myös merkkijono on sekvenssi. Mikä tahansa on Clojuressa sekvenssi, jos se on **sekvenssimäinen** (seq-able).
 {: ng-show="block11" .description}
 
-#### `first` item or not <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Sisältää ensimmäisen `first` tai sitten ei  <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> If something is **seq-able**, it returns the first item in the sequence
-> by the `first` function. This is a good test whether it is a sequence or not.
+> Jos jokin on **sekvenssimäinen**, siitä saadaan ensimmäinen jäsen `first` funktion avulla.
+> Tämä on hyvä testi sille onko kyseessä sekvenssi vai ei.
 {: ng-show="block12" .description}
 </section>
 
