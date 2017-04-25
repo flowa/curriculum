@@ -8,19 +8,19 @@ permalink: /outline/sequences.html
 
 {% comment %}
 
-http://clojurebridge.github.io/curriculum/outline/sequences.html
+http://flowa.github.io/curriculum/outline/sequences.html
 
 {% endcomment %}
 
 <section>
 [BONUS]
 
-Sequences
+Sekvenssit
 -------------------------
 {: .slide-title .chapter}
 
-* What are sequences
-* Functions for sequences
+* Mitä sekvenssit ovat
+* Funktioita sekvensseille
     * `doseq`
     * `dotimes`
 </section>
