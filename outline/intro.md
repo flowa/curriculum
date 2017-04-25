@@ -251,7 +251,7 @@ Clojure intro
 * Katso mitä kilpikonna tekee
 * Katso [Turtles App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) ja
 [How To Walk Turtles](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
-[section 1 and 2], ja kokeile lisää kilpikonnien komentoja.
+[kappaleet 1 ja 2], ja kokeile lisää kilpikonnien komentoja.
 </section>
 
 <section>
