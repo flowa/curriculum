@@ -115,31 +115,28 @@ Clojure intro
 
 #### Sulkeet <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
-> Notice the parentheses. Parentheses enclose instructions to the
-> computer in Clojure. A left parenthesis
-> is the start of the instruction, and a matching right parenthesis is
-> the end of enclosing instruction. Normally, Clojure code has a lot
-> of nested parentheses, or in other words, nested enclosing instructions.
+> Huomaat varmasti sulkeet. Sulkeiden sisällä on komentoja Clojure kielellä. Vasen sulku
+> aloittaa komennon, ja vastaava oikea sulku lopettaa sen. Clojure-koodissa on paljon
+> sisäkkäisiä sulkeita, eli sisäkkäisiä komentoja.
+
 {: ng-show="block31" .description}
 
 #### Funktiot <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
 
-> Next to the parentheses, we see the instructions to the
-> computer. That instruction is normally what we call a _function_.
-> The functions do all the hard work in Clojure.
-> `print-str`, `+` and `forward` are all functions.
-> When these functions get run, they return some type of value.
-> Clojure functions always return a value.
+> Sulkujen sisällä on komentoja. Näitä kutsumme useimmiten _funktioiksi_.
+> Funktiot ovat Clojuren työhevosia. `print-str`, `+` ja `forward` 
+> ovat funktioita.
+> Clojuressa funktiot palauttavat aina arvon.
+
 {: ng-show="block32" .description}
 
-#### Argumentit <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
+#### Parametri <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
-> Many functions take in _arguments_--which are everything else inside
-> the enclosing parentheses after the function--.
-> `print-str` takes "Hello, World!" and returns a string.
-> `+` takes 3 and 4, adds them, and returns 7.
-> `forward` takes :trinity and 40, moves a turtle by 40 and returns
-> the result.
+> Monet funktiot ottavat parametreja. Parametreja voidaan käyttää
+> funktion sisällä, esimerkiksi
+> `print-str`:lle annetaan parametriksi "Hello World" ja se palautta merkkijonon.
+> `+`:lle annetaan 3 ja 4. Se laskee ne yhteen ja palauttaa 7.
+
 {: ng-show="block33" .description}
 </section>
 
