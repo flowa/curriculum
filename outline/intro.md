@@ -61,6 +61,7 @@ Clojure intro
 {: ng-show="block13" .description}
 
 #### Clojure on _hauskaa!_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
+
 > Clojure on _hauskaa_. Tämä on toki vain meidän mielipiteemme!
 > Toivottavasti tänään huomaat saman!
 {: ng-show="block14" .description}
