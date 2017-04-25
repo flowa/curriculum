@@ -149,7 +149,7 @@ be confusing.
 {: .slide_title .slide}
 
 1. Lisää kilpikonna
-  * Go to `walk.clj` file
+  * Avaa `walk.clj` file
   * Lisää rivi: `(add-turtle :neo)` viimeiseksi riviksi `walk.clj` tiedostossa
   * valitse rivi ja klikkaa "Reload Selection"
 2. (Optio) Lisää kilpikonna REPL:n kautta
@@ -397,7 +397,7 @@ st
 </section>
 
 <section>
-#### HARJOITUS 5 [BONUS]: Mallinna kurssitovereistasi
+#### HARJOITUS 5 [BONUS]: Mallinna kurssitovereitasi
 {: .slide_title .slide}
 
 * Ota talteen aikaisemmassa harjoituksessa tekemästi Map-rakenne itsestäsi
