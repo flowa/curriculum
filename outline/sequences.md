@@ -29,14 +29,14 @@ Sekvenssit
 ### Mitä sekvenssit ovat?
 {: .slide_title .slide}
 
-#### Clojuren tietorakenteita <button class="link" ng-bind-html="lisätietoa" ng-model="block11" ng-click="block11=!block11"></button>
+#### Clojuren tietorakenteita <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
 
 > Clojuressa voidaan sanoa, että kaikki tietorakenteet ovat sekvenssejä.
 > Tähän asti olemme oppineet, että `vektori` ja `mapit` (avain-arvoparit) ovat sekvenssejä.
 > Myös merkkijono on sekvenssi. Mikä tahansa on Clojuressa sekvenssi, jos se on **sekvenssimäinen** (seq-able).
 {: ng-show="block11" .description}
 
-#### Sisältää ensimmäisen `first` tai sitten ei  <button class="link" ng-bind-html="lisätietoa" ng-model="block12" ng-click="block12=!block12"></button>
+#### Sisältää ensimmäisen `first` tai sitten ei  <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
 > Jos jokin on **sekvenssimäinen**, siitä saadaan ensimmäinen jäsen `first` funktion avulla.
 > Tämä on hyvä testi sille onko kyseessä sekvenssi vai ei.
@@ -44,7 +44,7 @@ Sekvenssit
 </section>
 
 <section ng-controller="NarrativeController">
-#### Results of `first`
+#### `first` funktion tuloksia
 
 ```clojure
 (turtle-names)
@@ -67,7 +67,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 </section>
 
 <section ng-controller="NarrativeController">
-### Functions for sequences
+### Funktioita sekvensseille
 <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
 > Clojure is very good at *iterate* over a sequence.
