@@ -36,5 +36,5 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 * [Suorituksenhallinta ja logiikka](outline/flow_control.html)
 * [[bonus] Sekvenssit](outline/sequences.html)
 
-* [Toinen ohjelma: Kävelytetään kilpikonnaa](https://github.com/flowa/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (more function study)
+* [Toinen ohjelma: Kävelytetään kilpikonnaa](https://github.com/flowa/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) 
 </section>
