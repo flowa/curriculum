@@ -151,7 +151,7 @@ Funktiot
 > näitä merkkejä tarvitaan.
 {: ng-show="block61" .description}
 
-##### Predikaattiofunktiot <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
+##### Predikaattifunktiot <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
 
 > Clojuressa, `=` on ns. *predikaattifunktio*. Tämä saattaa hieman yllättää. 
 > Sen lisäksi Clojuressa, kuten monessa muussakin kielessä on predikaattifunktioita, joilla voi 
