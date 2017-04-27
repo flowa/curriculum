@@ -308,7 +308,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section>
-#### HARJOITUS 3: [Bonus] Viimeistel `true-or-false?` funktio
+#### HARJOITUS 3: [Bonus] Viimeistele `true-or-false?` funktio
 {: .slide_title .slide}
 
 > Edellisen kalvon `true-or-false?` funktio tuki vain `:and`
