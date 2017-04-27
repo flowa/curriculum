@@ -224,6 +224,7 @@ Funktiot
 {: ng-show="block111" .description}
 
 ```clojure
+(reduce str [:trinity :neo :oracle :cypher]) ;=> ":trinity:neo:oracle:cypher"
 (reduce str (turtle-names)) ;=> ":trinity:neo:oracle:cypher"
 (reduce + [30 60 90])       ;=> 180
 ```
