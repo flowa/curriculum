@@ -12,7 +12,7 @@ ClojureBridge
 ======================
 {: .slide-title .intro}
 
-[asennusohjeet](http://bit.ly/2qeznww)
+asennusohjeet: [http://bit.ly/2qeznww](http://bit.ly/2qeznww)
 </section>
 
  <section>
