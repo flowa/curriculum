@@ -18,7 +18,7 @@ Tietorakenteet
 {: .slide-title .chapter}
 
 * Vektorit
-* Mapit
+* Hakemistot (Map)
 </section>
 
 <section>
@@ -27,15 +27,15 @@ Tietorakenteet
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> So far, we've dealt with discrete pieces of data: one number, one
-string, one value. When programming, it is more often the case that
-you want to work with groups of data.
+> Tähän asti, olemme pelannet yksittäisillä, pienillä palasilla dataa: 
+yksi numero, yksi merkkijono, yksi arvo. Ohjelmoitaessa tyypillisesti 
+haluamme käsitellä joukko tällaisia pieni palasia.
 {: ng-show="block11" .description}
 
-> Clojure has great facilities for working with these groups, or
-*collections*, of data. Not only does it provide four different types
-of collections, but it also provides a uniform way to use all of these
-collections together.
+> Clojuressa on erinomaiset työkalut tällaisten datajoukkojen - tai 
+kokoelmien -  käsittelyyn. Sen lisäksi että clojure tarjoaa neljän erillaista 
+koelmatyyppiä kokoelma, kieli tarjoaa myös yhtenäisen tavan käsitellä näitä 
+rakentaita. 
 {: ng-show="block11" .description}
 </section>
 
@@ -45,23 +45,17 @@ collections together.
 
 #### Peräkkäinen kokoelma <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> A vector is a sequential collection of values. A vector may be
-> empty. A vector may contain values of different types.
-> Each value in a vector is numbered starting at 0, that number is
-> called its index. The index is used to refer to each value when
-> looking them up.
+> Verkori on perkkäinen kokoelma arvoja. A vektori voi olla tyhjä ja sen sisältämät arvo voivat 
+olla erityyppiä.  jokainen arvo on numeroitu alkaen nollasta. Tätä numero kutustaan arvon indeksiksi.
+Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektorissa.
 {: ng-show="block21" .description}
 
 #### Lokeromainen rakenne <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> To imagine a vector, imagine a box split into some number of
-> equally-sized compartments. Each of those compartments has a number.
-> You can put a piece of data inside each compartment and always know
-> where to find it, as it has a number.
+> voit ajatella vextorin laatikkona joka on jaettu samankokoisiin lokeroihin. Jokaisella lokerolla on numero, jota voit hyödyntää lattaaksesi dataa lokeroon, ja numeron avulla löydät aina sinne laittamasi datan.
 {: ng-show="block22" .description}
 
-> Note that the numbers start with 0. That may seem strange, but we
-> often count from zero when programming.
+> Huomaa että lokeron numeroinnnissa ensimmäinen lokeron indeksi on 0. Tämä voi tuntua aluksi omituisella, mutta ohjelmoitaessa laskeminen aloitetaan usein nollasta.
 {: ng-show="block22" .description}
 
 ![Vector](img/vector.png)
@@ -71,9 +65,7 @@ collections together.
 <section ng-controller="NarrativeController">
 #### Syntaksi <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
->Vectors are written using square brackets with any number of pieces
->of data inside them, separated by spaces. Here are some examples of
->vectors:
+>Vektorit esitellään käyttäen hakasulkeita ja pistämällä sulkeiden sisään halutut palaset dataa välilyönnillä erotettua. Tässä esimerkki vektorin käytöstä:
 {: ng-show="block31" .description}
 
 ```clojure
@@ -100,14 +92,16 @@ collections together.
 <section ng-controller="NarrativeController">
 #### Luominen <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> The next two functions are used to make new vectors. The `vector`
-> function takes any number of items and puts them in a new vector.
-> `conj` is an interesting function that you'll see used with all the
-> data structures. With vectors, it takes a vector and an item and
-> returns a new vector with that item added to the end of the vector.
-> Why the name `conj`? `conj` is short for conjoin, which means to 
-> join or combine. This is what we're doing: we're joining the new
-> item to the vector.
+> Seuravien kahden funktion avulla voit luoda uuden vektorin. `vector`
+> funktio ottaa parameterina miten monta palasta dataa tahansa ja palauttaa
+uuden vektorin josta data löytyy siinä järjestyksessä kuin ne olivat funktio kutsussa. 
+> `conj` funktiota käytetään useiden eri tietorakenteiden kanssa. Vektoreiden tapauksessa, 
+se ottaa vastaan ensimmäisenä parameterina vektorin ja palasen dataa, ja palauettaa 
+vektorin, jonka viimeiseksi elementiksi toisena parametrina annettu pala dataa löytyy.
+
+> Mistä nimi `conj` tulee? `conj` on lyennyt sanasta conjoin, mikä tarkoittaa 
+kirjalimellisesti liittää yhteen tai yhdeksi. Juuri tähän sitä käytämme: liiteämme 
+yhteen uuden palan dataan vektoriin.
 {: ng-show="block61" .description}
 
 ```clojure
@@ -133,7 +127,7 @@ be confusing.
 {: ng-show="block81" .description}
 
 ```clojure
-(count [5 10 15])
+(count [5 10 15])tutki
 ;=> 3
 (nth [5 10 15] 1)
 ;=> 10
