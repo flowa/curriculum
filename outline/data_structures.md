@@ -92,7 +92,7 @@ Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektoriss
 <section ng-controller="NarrativeController">
 #### Luominen <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> Seuravien kahden funktion avulla voit luoda uuden vektorin. `vector`
+> Seuraavien kahden funktion avulla voit luoda uuden vektorin. `vector`
 > funktio ottaa parameterina miten monta palasta dataa tahansa ja palauttaa
 uuden vektorin josta data löytyy siinä järjestyksessä kuin ne olivat funktio kutsussa. 
 > `conj` funktiota käytetään useiden eri tietorakenteiden kanssa. Vektoreiden tapauksessa, 
@@ -116,18 +116,15 @@ yhteen uuden palan dataan vektoriin.
 <section ng-controller="NarrativeController">
 #### Käsittely <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
-> Now, take a look at these four functions. `count` gives us a
-count of the number of items in a vector. `nth` gives us the nth
-item in the vector. Note that we start counting at 0, so in the
-example, calling `nth` with the number 1 gives us what we'd call the
-second element when we aren't programming. `first` returns the first
-item in the collection. `rest` returns all except the first item.
-Try not to think about that and `nth` at the same time, as they can
-be confusing.
+> Tarkestellaanpa seuraavaksi neljää perusfunktio koelmien käsittelyyn:
+`count` palauttaa vektorissa olevien elementtien lukumäärän. 
+`nth` palauttee järjestyksessä n:nnen elementin kun laskeminen aloitetaan nollasta. Toisin sanoen kun kutsut funktiota nth numerolla 1 saat itse asiassa toisen elementin kokelmasta, et ensimmäistä. 
+`first` palauttee ensimmäisen, eli indeksissä 0, olevan elementin. 
+`rest` palauttaa kaikki muut elementi uutena vektorina lukuunottamatta ensimmäistä palasta dataa. Se miten `nth` toimii voi tuntua aluksi hämmentävältä etenkin, kun `first` toimii kuten luontevasti oletat sen toimivan.
 {: ng-show="block81" .description}
 
 ```clojure
-(count [5 10 15])tutki
+(count [5 10 15])
 ;=> 3
 (nth [5 10 15] 1)
 ;=> 10
@@ -143,7 +140,7 @@ be confusing.
 {: .slide_title .slide}
 
 1. Lisää kilpikonna
-  * Avaa `walk.clj` file
+  * Avaa `walk.clj` tiedosto
   * Lisää rivi: `(add-turtle :neo)` viimeiseksi riviksi `walk.clj` tiedostossa
   * valitse rivi ja klikkaa "Reload Selection"
 2. (Optio) Lisää kilpikonna REPL:n kautta
@@ -161,17 +158,16 @@ be confusing.
 * Käytä sitten `nth` funktiota ja hae seuraavan tiistain lämpötila
 </section>
 
-
 <section ng-controller="NarrativeController">
-### Mapit 
+### Hakemistot (Map) 
 
 #### Avain arvo-parit <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
->Maps hold a set of keys and values associated with them. You can
->think of it like a dictionary: you look up things using a word (a
->keyword) and see the definition (its value). If you've programmed in
->another language, you might have seen something like maps--maybe
->called dictionaries, hashes, or associative arrays.
+> Hakemisto (map) koostuu joukosta toisiinsa linkitettyjä avaimia ja
+arvoja. Voi ajatella sen sanakirjana: löydyt sieltä avaimena käyttämällesi
+sanalle määritelmän (arvo). Jos  sinulla on entuudestaan kokemusta jostain
+muusta kielestä, niin vastaava tietorakenne löytyy niistä yleensä vaihtelevilla 
+nimillä: dictionary, hajautustaulukko (hashtable), assosiatiivinen taulukko (associative array).
 {: ng-show="block101" .description}
 
 ![Map](img/map.png)
@@ -180,15 +176,16 @@ be confusing.
 <section ng-controller="NarrativeController">
 #### Syntaksi <button class="link" ng-bind-html="details" ng-model="block102" ng-click="block102=!block102"></button>
 
-> We write maps by enclosing alternating keys and values in curly braces, like so.
+> Hakemisto (map) esitellään laittamalla kaarisulkeiden sisään vuorollen avaimia ja arvoja.
 {: ng-show="block102" .description}
 
-> Maps are useful because they can hold data in a way we normally
-> think about it. Take our made up example, Sally Brown. A map can
-> hold her first name and last name, her address, her favorite food,
-> or anything else. It's a simple way to collect that data and make it
-> easy to look up. The last example is an empty map. It is a map that
-> is ready to hold some things, but doesn't have anything in it yet.
+> Hakemistot ovat luontevia monenessa arkisessa tilanteeseen. Otetaanpa 
+keskitty esimerkki, Sally Brown. Hakemistoa (map) voi käyttää etunimen, 
+tai sukunimen hakemiseen, tai yhdistämään nimi osoitteeseen - tai suosikki 
+ruokaan, tai mihin tahansa muuhun. Kaikessa yksinkertaisuudessaan 
+hakamisto (map) on kokoelma, josta on helppo löytää arvo kun tietää avaimen. 
+Alla viiminen esimerkki on tyhjä hakemisto; hakemiston vektorin tapaan ei 
+tarvitse sisältää dataa lainkaan.
 {: ng-show="block102" .description}
 
 ```clojure
@@ -202,7 +199,7 @@ be confusing.
 #### Esimerkki <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
 
 > kilpikonnien `forward` ja `right` komennot palauttavat 
-> tuloksen mappina mäpin sisällä
+> tuloksen sisäkkäiseinä hakemistoina
 {: ng-show="block103" .description}
 
 ```clojure
@@ -214,9 +211,11 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Luominen <button class="link" ng-bind-html="details" ng-model="block104" ng-click="block104=!block104"></button>
+#### Käsittely 1 <button class="link" ng-bind-html="details" ng-model="block104" ng-click="block104=!block104"></button>
 
-> `assoc` and `dissoc` are paired functions: they associate and disassociate items from a map. See how we add the last name "Brown" to the map with `assoc`, and then we remove it with `dissoc`. `merge` merges two maps together to make a new map.
+> `assoc` ja `dissoc` muodostavat funktio parin: ensinnän mainittu liittää hakemistoon uuden arvon (associate) ja jälkimmäinen erottaa hakemistosta johokin avoin arvo parin.
+
+Alla olevassa esimerkissä lisäämme ensin hakemistoon (map), josta löytyy jo tieto etunimestä ("Sally") sukunimen "Brown" käyttäen `assoc` funktiota, tämän jälkeen poistamme sen `dissoc` funktiolla. Lopuksi käyämme `merge` fuktiota kahden hakemiston yhdistämiseen.
 {: ng-show="block104" .description}
 
 ```clojure
@@ -232,17 +231,12 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Käsittely 1 <button class="link" ng-bind-html="details" ng-model="block105" ng-click="block105=!block105"></button>
+#### Käsittely 2 <button class="link" ng-bind-html="details" ng-model="block105" ng-click="block105=!block105"></button>
 
-> `count`, every collection has this function. Why do you think the
-> answer is two? `count` is returning the number of associations.
+> Jokaiselta koelmalla on `count` funktio. Katso alle olevaa esimerkkiä. Mistä syystä arvelet `count` funktion palauttavan arvon 2? `count` palauttaa avain-arvo parien määrän hakemistolle. (Vektorillehan `count` palautti arvojen määrän). 
 {: ng-show="block105" .description}
 
-> Since map is a key-value pair, the key is used to get a value from a
-> map. One of the ways often used in Clojure is the examples below.
-> We can use a keyword like using a function in order to look
-> up values in a map. In the last example, we supplied the key `:MISS`.
-> This works when the key we asked for is not in the map.
+> Voit yrittää hakea arvojoa hakemistosta (map) käytteän `get` funktiota. Funktio ottaa vastaan ensimmäisenä parametrina hakemiston, josta arvoja haetaan, toisena parametrina avaimen, minkä arvoa haet, ja kolmantane optionaalisena parametrina arvon, mikä palautetaan jos hakemisosta ei löydykään arvoa avaimelle. Alla oleva esimerkki havainnollistaa kunka `get`funktio toimii, jos aivamelle löytyy arvo funktio palauttaa sen, ellei sitä löyty palauteaan joko nil tai kolmantena parametrina annettu arvo :MISS.
 {: ng-show="block105" .description}
 
 ```clojure
@@ -261,11 +255,9 @@ be confusing.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Käsittely 2 <button class="link" ng-bind-html="details" ng-model="block106" ng-click="block106=!block106"></button>
+#### Käsittely 3 <button class="link" ng-bind-html="details" ng-model="block106" ng-click="block106=!block106"></button>
 
-> Then we have `keys` and `vals`, which are pretty simple: they return
-> the keys and values in the map. The order is not guaranteed, so we
-> could have gotten `(:first :last)` or `(:last :first)`.
+> Voit myös kysyä mitä avaimia hakemisossa on `keys` funktiolla ja vastaavasti sen arvoja `vals` funktiolla funktio palauttavat avaimet jar arvot listana. Järjestys saattaa vaihdella, eli voi olla että all olevassa esimerkissä tulos on `(:first :last)` tai `(:last :first)`.
 {: ng-show="block106" .description}
 
 ```clojure
@@ -280,14 +272,8 @@ be confusing.
 <section ng-controller="NarrativeController">
 #### Päivittäminen <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
 
-> After the creation, we want to save a new value associated to the
-> key. The `assoc` function can be used by assigning a new value to
-> the existing key.
-> Also, there's handy function `update`. The function takes map and
-> a key with a function. The value of specified key will be the first
-> argument of the given function.
-> The `update-in` function works like `update`, but takes a vector of keys
-> to update at a path to a nested map.
+> Aiemmin käytimme `assoc` funtiota hakemiston muodostamiseen. Tokihan joskus avaimen arvoa on tarpeen päivittää. Tähän tarkoitukseen soveltuu parhaiten `update` funktio. Se ottaa ensimmäisenä parameterina hakemiston toisena avaimen jonka arvoa on tarkoitus päivittää ja viimeisenä funktion, jolla jolla arvoa pävitetään (alla olevissa esimerkeissä `inc` ja `str ", world` 
+> `update-in` funktio toimii samaan tapaan kuin `update` sillä erotuksella että yksittäisen avaimen asemesta sille voi antaa parametrina "polun" useammasta sisäkkäisestä hakemisista koostuavan tietorakenteen arvoon. 
 {: ng-show="block110" .description}
 
 ```clojure
@@ -312,15 +298,13 @@ be confusing.
 
 #### <button class="link" ng-model="block101" ng-click="block101=!block101">Intro</button>
 
-> Simple values such as numbers, keywords, and strings are not the
-> only types of things you can put into collections. You can also put
-> other collections into collections, so you can have a vector of
-> maps, or a list of vectors, or whatever combination fits your data.
-{: ng-show="block101" .description}
+> Voi koelmiin mutakinn kuin vain yksittäisiä arvoja kuten numeroita, avainsanoja, tai merkkijonoja.
+Voit pistää sinen myös kokelmia. Tietorakenteesi voi olla vaikkapa vektori hakemistoja, tai list
+vektoreita, tai mikä tahansa ydistelmä, mikä soveltuu datasi esittämiseen. 
 </section>
 
 <section>
-#### Vektori mappeja
+#### Vektori hakemistoja
 
 ```clojure
 (state-all)
@@ -338,7 +322,7 @@ be confusing.
 </section>
 
 <section>
-#### Mappi mappeja
+#### Hakemisto hakemistoja
 
 ```clojure
 (def st (first states))
