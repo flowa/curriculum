@@ -305,7 +305,7 @@ average-fruit-amount
 <section>
 #### HARJOITUS 2 [BONUS]: Minuutit ja sekunnit
 
-* Muunna 1000 seconds to minuuteiksi ja sekunneiksi
+* Muunna 1000 sekuntia minuuteiksi ja sekunneiksi
 * Minuutit ja sekunnit ovat eri arvoja
 * `(quot x y)` saat kokonaisluvun x jaettuna y:llä.
 * `(rem x y)` saat jakojäännöksen x jaettuna y:llä.
