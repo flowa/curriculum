@@ -11,6 +11,8 @@ permalink: /index.html
 ClojureBridge
 ======================
 {: .slide-title .intro}
+
+[asennusohjeet](http://bit.ly/2qeznww)
 </section>
 
  <section>
