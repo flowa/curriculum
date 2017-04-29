@@ -17,7 +17,7 @@ Tietorakenteet
 ----------------------------------------
 {: .slide-title .chapter}
 
-* Vektorit
+* Vektorit (Vector)
 * Hakemistot (Map)
 </section>
 
@@ -27,15 +27,15 @@ Tietorakenteet
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> Tähän asti, olemme pelannet yksittäisillä, pienillä palasilla dataa: 
+> Tähän asti, olemme pelanneet yksittäisillä, pienillä palasilla dataa: 
 yksi numero, yksi merkkijono, yksi arvo. Ohjelmoitaessa tyypillisesti 
-haluamme käsitellä joukko tällaisia pieni palasia.
+haluamme käsitellä joukkoa tällaisia pieni palasia.
 {: ng-show="block11" .description}
 
-> Clojuressa on erinomaiset työkalut tällaisten datajoukkojen - tai 
-kokoelmien -  käsittelyyn. Sen lisäksi että clojure tarjoaa neljän erillaista 
-koelmatyyppiä kokoelma, kieli tarjoaa myös yhtenäisen tavan käsitellä näitä 
-rakentaita. 
+> Clojuresta löytyy erinomaiset työkalut tällaisten datajoukkojen - tai 
+kokoelmien -  käsittelyyn. Sen lisäksi, että clojure tarjoaa neljä erillaista 
+kokoelmatyyppiä, kieli tarjoaa myös yhtenäisen tavan käsitellä näitä 
+rakentaita.
 {: ng-show="block11" .description}
 </section>
 
@@ -45,17 +45,21 @@ rakentaita.
 
 #### Peräkkäinen kokoelma <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> Verkori on perkkäinen kokoelma arvoja. A vektori voi olla tyhjä ja sen sisältämät arvo voivat 
-olla erityyppiä.  jokainen arvo on numeroitu alkaen nollasta. Tätä numero kutustaan arvon indeksiksi.
+> Verkori on perkkäinen kokoelma arvoja. Vektori voi olla tyhjä ja sen sisältämät arvo voivat 
+olla erityyppiä. Jokainen arvo on numeroitu alkaen nollasta. Tätä numero kutsutaan arvon indeksiksi.
 Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektorissa.
 {: ng-show="block21" .description}
 
 #### Lokeromainen rakenne <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> voit ajatella vextorin laatikkona joka on jaettu samankokoisiin lokeroihin. Jokaisella lokerolla on numero, jota voit hyödyntää lattaaksesi dataa lokeroon, ja numeron avulla löydät aina sinne laittamasi datan.
+> Voit ajatella vektorin laatikkona, joka on jaettu samankokoisiin lokeroihin. 
+Jokaisella lokerolla on numero, jota voit hyödyntää lattaaksesi dataa lokeroon. 
+Numeron avulla löydät myös sinne laittamasi datan.
 {: ng-show="block22" .description}
 
-> Huomaa että lokeron numeroinnnissa ensimmäinen lokeron indeksi on 0. Tämä voi tuntua aluksi omituisella, mutta ohjelmoitaessa laskeminen aloitetaan usein nollasta.
+> Huomaa että lokeron numeroinnnissa ensimmäinen lokeron indeksi on 0. 
+Tämä voi tuntua aluksi omituisella, mutta ohjelmoitaessa laskeminen 
+aloitetaan usein nollasta.
 {: ng-show="block22" .description}
 
 ![Vector](img/vector.png)
@@ -65,12 +69,14 @@ Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektoriss
 <section ng-controller="NarrativeController">
 #### Syntaksi <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
->Vektorit esitellään käyttäen hakasulkeita ja pistämällä sulkeiden sisään halutut palaset dataa välilyönnillä erotettua. Tässä esimerkki vektorin käytöstä:
+>Vektorit esitellään käyttäen hakasulkeita ja pistämällä sulkeiden sisään 
+halutut palaset dataa välilyönnillä erotettua. Tässä esimerkki vektorin käytöstä:
 {: ng-show="block31" .description}
 
 ```clojure
 [1 2 3 4 5]
 [56.9 60.2 61.8 63.1 54.3 66.4 66.5 68.1 70.2 69.2 63.1 57.1]
+[1 "a" 1.2 true 5]
 []
 ```
 </section>
@@ -78,8 +84,7 @@ Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektoriss
 <section ng-controller="NarrativeController">
 #### Esimerkki <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
 
-> `(turtle-names)` komento palauttaa kilpikonnien nimet
-> vektorissa.
+> `(turtle-names)` komento palauttaa kilpikonnien nimet vektorissa.
 {: ng-show="block41" .description}
 
 ```clojure
@@ -92,15 +97,17 @@ Indeksiä käyteään kun haluataan käsitellä jotain tiettyä arvoon vektoriss
 <section ng-controller="NarrativeController">
 #### Luominen <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> Seuraavien kahden funktion avulla voit luoda uuden vektorin. `vector`
-> funktio ottaa parameterina miten monta palasta dataa tahansa ja palauttaa
-uuden vektorin josta data löytyy siinä järjestyksessä kuin ne olivat funktio kutsussa. 
-> `conj` funktiota käytetään useiden eri tietorakenteiden kanssa. Vektoreiden tapauksessa, 
-se ottaa vastaan ensimmäisenä parameterina vektorin ja palasen dataa, ja palauettaa 
-vektorin, jonka viimeiseksi elementiksi toisena parametrina annettu pala dataa löytyy.
+> Seuraavaa kahta funktiota voit hyödyntää uuden vektorin luomiseen: 
+>`vector` funktio ottaa miten monta parameterina tahansa ja palauttaa
+uuden vektorin, josta data löytyy siinä järjestyksessä kuin ne olivat 
+funktio kutsussa parametreina.
+> `conj` funktiota käytetään useiden eri tietorakenteiden kanssa. Vektoreiden 
+tapauksessa, se ottaa vastaan ensimmäisenä parameterina vektorin ja palasen 
+dataa, ja palauettaa vektorin, jonka viimeiseksi elementiksi toisena parametrina 
+annettu pala dataa löytyy.
 
-> Mistä nimi `conj` tulee? `conj` on lyennyt sanasta conjoin, mikä tarkoittaa 
-kirjalimellisesti liittää yhteen tai yhdeksi. Juuri tähän sitä käytämme: liiteämme 
+> Mistä nimi `conj` tulee? `conj` on lyhennys sanasta conjoin, mikä tarkoittaa 
+kirjalimellisesti liittää yhteen tai yhdeksi. Juuri tähän sitä käytämme: liitämme 
 yhteen uuden palan dataan vektoriin.
 {: ng-show="block61" .description}
 
@@ -116,11 +123,15 @@ yhteen uuden palan dataan vektoriin.
 <section ng-controller="NarrativeController">
 #### Käsittely <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
-> Tarkestellaanpa seuraavaksi neljää perusfunktio koelmien käsittelyyn:
+> Tarkastellaanpa seuraavaksi neljää perusfunktiota kokoelmien käsittelyyn:
 `count` palauttaa vektorissa olevien elementtien lukumäärän. 
-`nth` palauttee järjestyksessä n:nnen elementin kun laskeminen aloitetaan nollasta. Toisin sanoen kun kutsut funktiota nth numerolla 1 saat itse asiassa toisen elementin kokelmasta, et ensimmäistä. 
-`first` palauttee ensimmäisen, eli indeksissä 0, olevan elementin. 
-`rest` palauttaa kaikki muut elementi uutena vektorina lukuunottamatta ensimmäistä palasta dataa. Se miten `nth` toimii voi tuntua aluksi hämmentävältä etenkin, kun `first` toimii kuten luontevasti oletat sen toimivan.
+`nth` palauttaa järjestyksessä n:nnen elementin kun laskeminen aloitetaan nollasta. Toisin sanoen 
+kun kutsut funktiota nth numerolla 1 saat toisen elementin kokelmasta, et ensimmäistä. 
+Ensimmäinen elementti tätä funktiota käytettäessä on nollas.
+`first` palauttaa ensimmäisen, eli indeksissä 0, olevan elementin. 
+`rest` palauttaa kaikki muut elementi uutena vektorina lukuunottamatta ensimmäistä 
+palasta dataa. Se miten `nth` toimii voi tuntua aluksi hämmentävältä etenkin, kun 
+`first` toimii kuten luontevasti oletat sen toimivan.
 {: ng-show="block81" .description}
 
 ```clojure
@@ -164,10 +175,15 @@ yhteen uuden palan dataan vektoriin.
 #### Avain arvo-parit <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
 > Hakemisto (map) koostuu joukosta toisiinsa linkitettyjä avaimia ja
-arvoja. Voi ajatella sen sanakirjana: löydyt sieltä avaimena käyttämällesi
-sanalle määritelmän (arvo). Jos  sinulla on entuudestaan kokemusta jostain
-muusta kielestä, niin vastaava tietorakenne löytyy niistä yleensä vaihtelevilla 
-nimillä: dictionary, hajautustaulukko (hashtable), assosiatiivinen taulukko (associative array).
+arvoja. Voi ajatella sen sanakirjana: löydät sieltä avaimena käyttämällesi
+sanalle määritelmän (arvo). Vielä yksinkertaisempi esimerkki on puhelinluettelo:
+se yhdistää henkilön nimen puhelinumeroon; tai lomake: se yhdistaa arvon kuhunkin 
+lomakkeen nimettyyn kenttään (esim. etunimen etunimikenttään).
+{: ng-show="block101" .description}
+
+> Jos  sinulla on entuudestaan kokemusta jostain muusta kielestä, niin vastaava 
+tietorakenne löytyy niistä yleensä vaihtelevilla nimillä: dictionary, hajautustaulukko 
+(hashtable), assosiatiivinen taulukko (associative array).
 {: ng-show="block101" .description}
 
 ![Map](img/map.png)
@@ -180,12 +196,12 @@ nimillä: dictionary, hajautustaulukko (hashtable), assosiatiivinen taulukko (as
 {: ng-show="block102" .description}
 
 > Hakemistot ovat luontevia monenessa arkisessa tilanteeseen. Otetaanpa 
-keskitty esimerkki, Sally Brown. Hakemistoa (map) voi käyttää etunimen, 
-tai sukunimen hakemiseen, tai yhdistämään nimi osoitteeseen - tai suosikki 
-ruokaan, tai mihin tahansa muuhun. Kaikessa yksinkertaisuudessaan 
-hakamisto (map) on kokoelma, josta on helppo löytää arvo kun tietää avaimen. 
-Alla viiminen esimerkki on tyhjä hakemisto; hakemiston vektorin tapaan ei 
-tarvitse sisältää dataa lainkaan.
+keskitty esimerkki, Sally Brown. Tässä esimerkissä hakemistoa (map) voi 
+käyttää etunimen, tai sukunimen hakemiseen, tai osoitteen esittämiseen 
+ja yhdistämiseen Sally Browniin - tai suosikki ruokaan, tai mihin tahansa 
+muuhun. Kaikessa yksinkertaisuudessaan hakamisto (map) on kokoelma, josta 
+on helppo löytää arvo kun tietää avaimen. Vektorien tapaan myös hakemisto 
+voi olla tyhjä - eli se ei välttämättä sisällä dataa lainkaan.
 {: ng-show="block102" .description}
 
 ```clojure
@@ -198,8 +214,8 @@ tarvitse sisältää dataa lainkaan.
 <section ng-controller="NarrativeController">
 #### Esimerkki <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
 
-> kilpikonnien `forward` ja `right` komennot palauttavat 
-> tuloksen sisäkkäiseinä hakemistoina
+> kilpikonnien `forward` ja `right` komennot palauttavat tuloksen 
+sisäkkäisinä hakemistoina
 {: ng-show="block103" .description}
 
 ```clojure
@@ -213,9 +229,13 @@ tarvitse sisältää dataa lainkaan.
 <section ng-controller="NarrativeController">
 #### Käsittely 1 <button class="link" ng-bind-html="details" ng-model="block104" ng-click="block104=!block104"></button>
 
-> `assoc` ja `dissoc` muodostavat funktio parin: ensinnän mainittu liittää hakemistoon uuden arvon (associate) ja jälkimmäinen erottaa hakemistosta johokin avoin arvo parin.
-
-Alla olevassa esimerkissä lisäämme ensin hakemistoon (map), josta löytyy jo tieto etunimestä ("Sally") sukunimen "Brown" käyttäen `assoc` funktiota, tämän jälkeen poistamme sen `dissoc` funktiolla. Lopuksi käyämme `merge` fuktiota kahden hakemiston yhdistämiseen.
+> `assoc` ja `dissoc` muodostavat funktio parin: ensinnän mainittu liittää 
+hakemistoon uuden arvon avaimelle (associate) ja jälkimmäinen erottaa hakemistosta 
+johokin avoin arvo parin käyttäen avainta.
+> Alla olevassa esimerkissä lisäämme ensin hakemistoon (map), josta löytyy
+jo tieto etunimestä ("Sally"), sukunimen "Brown" käyttäen `assoc` funktiota, 
+tämän jälkeen poistamme sen `dissoc` funktiolla. Lopuksi käytämme `merge` 
+fuktiota kahden hakemiston yhdistämiseen.
 {: ng-show="block104" .description}
 
 ```clojure
@@ -272,8 +292,16 @@ Alla olevassa esimerkissä lisäämme ensin hakemistoon (map), josta löytyy jo 
 <section ng-controller="NarrativeController">
 #### Päivittäminen <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
 
-> Aiemmin käytimme `assoc` funtiota hakemiston muodostamiseen. Tokihan joskus avaimen arvoa on tarpeen päivittää. Tähän tarkoitukseen soveltuu parhaiten `update` funktio. Se ottaa ensimmäisenä parameterina hakemiston toisena avaimen jonka arvoa on tarkoitus päivittää ja viimeisenä funktion, jolla jolla arvoa pävitetään (alla olevissa esimerkeissä `inc` ja `str ", world` 
-> `update-in` funktio toimii samaan tapaan kuin `update` sillä erotuksella että yksittäisen avaimen asemesta sille voi antaa parametrina "polun" useammasta sisäkkäisestä hakemisista koostuavan tietorakenteen arvoon. 
+> Aiemmin käytimme `assoc` funtiota hakemiston muodostamiseen. Tokihan joskus avaimen 
+arvoa on tarpeen päivittää. Tähän tarkoitukseen soveltuu usein parhaiten `update` 
+funktio. Se ottaa ensimmäisenä parameterina hakemiston toisena avaimen, jonka arvoa
+on tarkoitus päivittää ja viimeisenä funktion, jolla arvoa pävitetään 
+(alla olevissa esimerkeissä `inc` ja `str ", world`)
+{: ng-show="block110" .description}
+
+> `update-in` funktio toimii samaan tapaan kuin `update` sillä erotuksella että 
+yksittäisen avaimen asemesta sille voi antaa parametrina "polun" useammasta 
+sisäkkäisestä hakemisista koostuavan tietorakenteen yksittäiseen arvoon. 
 {: ng-show="block110" .description}
 
 ```clojure
@@ -298,9 +326,10 @@ Alla olevassa esimerkissä lisäämme ensin hakemistoon (map), josta löytyy jo 
 
 #### <button class="link" ng-model="block101" ng-click="block101=!block101">Intro</button>
 
-> Voi koelmiin mutakinn kuin vain yksittäisiä arvoja kuten numeroita, avainsanoja, tai merkkijonoja.
-Voit pistää sinen myös kokelmia. Tietorakenteesi voi olla vaikkapa vektori hakemistoja, tai list
-vektoreita, tai mikä tahansa ydistelmä, mikä soveltuu datasi esittämiseen. 
+> Kuten yllä on jo käynyt ilmi, kokoelmiin vain yksittäisiä arvojen (numerot, 
+avainsanat, tai merkkijonot) lisäksi säilöä kokoelmia. Tietorakenteesi voi olla 
+vaikkapa vektori hakemistoja, tai lista vektoreita, tai mikä tahansa ydistelmä 
+mikä suinkin soveltuu datasi esittämiseen.
 </section>
 
 <section>
